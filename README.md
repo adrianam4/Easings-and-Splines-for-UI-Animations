@@ -3,6 +3,11 @@ I'm [Adrián Aroca](https://www.linkedin.com/in/adri%C3%A1n-aroca-mascaraque-457
 ## Introduction
 The goal I have with this research is achieve coding a C++ Library that supports as easing functions as possible. After that, I would like to create a logo animation made with that Library.
 ## Easings
+### Types Of Easings
+### Uses of Easings
+### How Does It Work
+### Easing Functions 
 ## Splines
+### Uses Of Splines
 ## Improvements
 ## References
