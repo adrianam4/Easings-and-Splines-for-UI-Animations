@@ -14,6 +14,8 @@ All the easing functions depends on four parameters:
 - Change in distance (c) which is the difference of distance between the beggining position and the final one (f-b).
 - Duration (d) that represent the amount of total iterations you want for complete your animation.
 
+![Bouncing Ball Example](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/bouncing_ball.gif)
+
 ### Types Of Easings
 ### Uses of Easings
 ### How Does It Work
