@@ -77,6 +77,13 @@ That 3 types were the biggest types of easing, the most global ones. But, there 
   5.Elastic: The elastic function is needed when you want to describe a movement where your object is accelerated and decelerated so smoothly. 
    
 ### 2.2 Uses of Easings
+
+Like said previously, easings are used to create animations that describes accelerated movements on an easy way, because if that animations were created frame by frame, it would suppose a big amount of work, which is boring and unnecessary. Almost all the Software programs dedicated to 2D-3D Animation (For Example, Toon Boom Harmony), uses the easing functions. That allow the users to avoid creating hundreds of frames for a simple movement, and instead it does it automatically taking into account the distance between frames. Easings are also used in the area of Camera views, where the easing sunctions, allow the users to create a smooth experience and saving a lot of time and work, because they dont need to "Hard Code" the camera progress.
+
+All this is possible thanks to all the Programmers or Coders that implement all the math functions explained [here](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#21-types-of-easings).
+
+![Uses of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/easing%20usability.gif)
+
 ### 2.3 How Does It Work
 ### 2.4 Easing Functions 
 ## 3. Splines
