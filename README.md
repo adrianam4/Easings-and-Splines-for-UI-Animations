@@ -39,7 +39,7 @@ All the easing functions depends on four parameters:
 ![Bouncing Ball Example](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/bouncing_ball.gif)
 
 ### 2.1 Types Of Easings
-There are some different types of easings, which can be sort like that:
+There are some different types of easings, which can be sorted like that:
 
 First of all, there are 3 easings types:
    1. Ease in: This type of easing, describes the movement of an object with POSITIVE acceleration.
