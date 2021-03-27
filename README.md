@@ -51,17 +51,18 @@ First of all, there are 3 easings types:
 That 3 types were the biggest types of easing, the most global ones. But, there is a lot of specific functions you can use to describe movements based on easings. 
 
 - Standard Functions (Uses pows from 1-6)
-  1. Linear: Using a pow of 1, it describes a linear movement with no acceleration (constant speed).
+
+  1.Linear: Using a pow of 1, it describes a linear movement with no acceleration (constant speed).
  
-  2. Quad: Describes a movement accelerated, where the speed is increased by a pow of 2.
+  2.Quad: Describes a movement accelerated, where the speed is increased by a pow of 2.
   
-  3. Cubic: Describes a movement accelerated, where the speed is increased by a pow of 3.
+  3.Cubic: Describes a movement accelerated, where the speed is increased by a pow of 3.
   
-  4. Quard: Describes a movement accelerated, where the speed is increased by a pow of 4.
+  4.Quart: Describes a movement accelerated, where the speed is increased by a pow of 4.
   
-  5. Quint or Strong: Describes a movement accelerated, where the speed is increased by a pow of 5.
+  5.Quint or Strong: Describes a movement accelerated, where the speed is increased by a pow of 5.
    
-  6. Circular: Uses a pow of 6, and describes a circular movement.
+  6.Circular: Uses a pow of 6, and describes a circular movement.
    
 - Complex Functions
 
