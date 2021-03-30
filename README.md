@@ -128,9 +128,11 @@ In videogames, splines have some uses, but the main is creating paths for the en
 Here we have some graphic examples of what I have said on the previous lines:
 
 ![doom](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/doom%20eternal.gif)
+
 Here, we can see how splines are used in Doom Eternal to give a smooth camera movement to the players.
 
 ![crash](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/crash.gif)
+
 Here, splines are used to define the path the apples follow until they arrive to his destiny.
 
 
