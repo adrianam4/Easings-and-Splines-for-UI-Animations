@@ -13,8 +13,10 @@
    2.4. [Easing Functions](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#24-easing-functions)
 
 3. [Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#3-splines)
+
+   3.1. [Types of Splines]() 
    
-   3.1. [Uses of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#31-uses-of-splines)
+   3.2. [Uses of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#31-uses-of-splines)
 
 4. [Improvements](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#4-improvements)
 
@@ -87,7 +89,8 @@ All this is possible thanks to all the Programmers or Coders that implement all 
 ### 2.3 How Does It Work
 ### 2.4 Easing Functions 
 ## 3. Splines
-### 3.1 Uses Of Splines
+### 3.1 Types Of Splines
+### 3.2 Uses Of Splines
 ## 4. Improvements
 ## 5. References
 
