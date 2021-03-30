@@ -4,17 +4,19 @@
 
 2. [Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#2-easings)
 
-   2.1. [Types of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#21-types-of-easings)
+    2.1. [Types of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#21-types-of-easings)
    
-   2.2. [Uses of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#22-uses-of-easings)
+    2.2. [Uses of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#22-uses-of-easings)
    
-   2.3. [How does it work](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#23-how-does-it-work)
+    2.3. [How does it work](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#23-how-does-it-work)
    
-   2.4. [Easing Functions](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#24-easing-functions)
+    2.4. [Easing Functions](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#24-easing-functions)
 
 3. [Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#3-splines)
+
+    3.1. [Types of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/README.md#31-types-of-splines) 
    
-   3.1. [Uses of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#31-uses-of-splines)
+    3.2. [Uses of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/README.md#32-uses-of-splines)
 
 4. [Improvements](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#4-improvements)
 
@@ -87,7 +89,27 @@ All this is possible thanks to all the Programmers or Coders that implement all 
 ### 2.3 How Does It Work
 ### 2.4 Easing Functions 
 ## 3. Splines
-### 3.1 Uses Of Splines
+In *maths* area, a spline is a function defined piece by piece, by polynomials. In interpolating problems, spline interpolation is usually preferred over polynomial interpolation because it performs practically the same, even using low degree polynomials, while avoiding [Runge's phenomenon](https://en.wikipedia.org/wiki/Runge%27s_phenomenon) for higher degrees.
+
+In *computer science*, when you talk about splines, you're talking about a piecewise polynomial curve. Splines are popular curves on this field because of the simplicity of their construction, their ease and accuracy of evaluation, and their capacity to approximate complex shapes through curve fitting and interactive curve design.
+
+Now, let's see it from the field we're interested on, the Animation. Here, a spline is another method for creating animations on an easy way. Using splines, you will be able to create smooth animations just moving curves on a graph. So, using splines, you can do your work easyly, saving your time and effort.
+
+There are some different types of splines, let's see them.
+### 3.1 Types Of Splines
+1. Bezier: Is just a spline defined "point by point", by different Bezier curves.
+
+2. Cubic: This one gives an interpolation polynomial that is smoother and has less error than some other interpolating polynomials. It's used to avoid the problem of Runge's phenomenon.
+
+3. B-Spline: Is a spline function that has minimal support with respect to a given degree, smoothness, and domain partition. All the spline functions of a given degree can be expressed as a linear combination of B-splines.
+
+4. Linear: Is a continuous function defined by linear polynomials. So, it's a continuous set of straight lines.
+
+5. NURBS (Non-uniform rational B-Spline): This one is just a mathematical model using B-Splines, usually used in computer graphics for representing curves and surfaces. It gives a great flexibility and precision for handling both analytic and model shapes.
+
+6. Catmull-Rom: A catmull-rom spline is a curve named like this because of his creators ([Edwin Catmull](https://en.wikipedia.org/wiki/Edwin_Catmull) and [Raphael Rom](https://es.wikipedia.org/w/index.php?title=Raphael_Rom&action=edit&redlink=1)). The main advantage of this techinque is that the original set of points are also part of the control points from the curve spline.
+
+### 3.2 Uses Of Splines
 ## 4. Improvements
 ## 5. References
 
