@@ -89,6 +89,11 @@ All this is possible thanks to all the Programmers or Coders that implement all 
 ### 2.3 How Does It Work
 ### 2.4 Easing Functions 
 ## 3. Splines
+In *maths* area, a spline is a function defined piece by piece, by polynomials. In interpolating problems, spline interpolation is usually preferred over polynomial interpolation because it performs practically the same, even using low degree polynomials, while avoiding [Runge's phenomenon](https://en.wikipedia.org/wiki/Runge%27s_phenomenon) for higher degrees.
+
+In *computer science*, when you talk about splines, you're talking about a piecewise polynomial curve. Splines are popular curves on this field because of the simplicity of their construction, their ease and accuracy of evaluation, and their capacity to approximate complex shapes through curve fitting and interactive curve design.
+
+Now, let's see it from the field we're interested on, the Animation. Here, a spline is another method for creating animations on an easy way. Using splines, you will be able to create smooth animations just moving curves on a graph. So, using splines, you can do your work easyly, saving your time and effort.
 ### 3.1 Types Of Splines
 ### 3.2 Uses Of Splines
 ## 4. Improvements
