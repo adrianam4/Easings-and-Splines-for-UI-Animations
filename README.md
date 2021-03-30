@@ -133,7 +133,7 @@ Here, we can see how splines are used in "[Doom Eternal](https://en.wikipedia.or
 
 ![crash](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/crash.gif)
 
-On "[Crash Bandiccot: N-Sane Trilogy](https://en.wikipedia.org/wiki/Crash_Bandicoot_N._Sane_Trilogy)", splines are used to define the path the apples follow until they arrive to his destiny.
+On "[Crash Bandiccot: N.Sane Trilogy](https://en.wikipedia.org/wiki/Crash_Bandicoot_N._Sane_Trilogy)", splines are used to define the path the apples follow until they arrive to his destiny.
 
 
 ## 4. Improvements
