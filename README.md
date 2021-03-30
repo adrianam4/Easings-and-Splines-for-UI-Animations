@@ -4,19 +4,19 @@
 
 2. [Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#2-easings)
 
-   2.1. [Types of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#21-types-of-easings)
+    2.1. [Types of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#21-types-of-easings)
    
-   2.2. [Uses of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#22-uses-of-easings)
+    2.2. [Uses of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#22-uses-of-easings)
    
-   2.3. [How does it work](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#23-how-does-it-work)
+    2.3. [How does it work](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#23-how-does-it-work)
    
-   2.4. [Easing Functions](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#24-easing-functions)
+    2.4. [Easing Functions](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#24-easing-functions)
 
 3. [Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#3-splines)
 
-   3.1. [Types of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/README.md#31-types-of-splines) 
+    3.1. [Types of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/README.md#31-types-of-splines) 
    
-   3.2. [Uses of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/README.md#32-uses-of-splines)
+    3.2. [Uses of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/README.md#32-uses-of-splines)
 
 4. [Improvements](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#4-improvements)
 
