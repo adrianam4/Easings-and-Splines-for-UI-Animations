@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Enemy.h"
+#include "Easings.h"
 
 class Font;
 
@@ -27,5 +28,11 @@ public:
 
 private:
 	Font* font;
+	Easing* easing;
+	float position_x;
+	float position_y;
 
+	float currentFrame;
+
+	bool easingActivated;
 };

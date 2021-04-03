@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(477,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
+  Golem.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Game\Source\Golem.cpp(87,48): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Game\Source\Golem.cpp(87,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  Game.vcxproj -> C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Build\Debug\Game.exe
+          1 archivo(s) copiado(s).

@@ -113,6 +113,7 @@
     <ClCompile Include="Source\Skull.cpp">
       <Filter>Entities</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Easings.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\App.h" />
@@ -271,6 +272,7 @@
     <ClInclude Include="Source\Skull.h">
       <Filter>Entities</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Easings.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="External">

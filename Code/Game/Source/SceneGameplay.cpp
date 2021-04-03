@@ -135,7 +135,7 @@ bool SceneGameplay::Update(float dt)
 		HandleInput(dt);
 		currentPlayer->Update(dt);
 		/*npc->Update(dt);*/
-		//entityManager->Update(dt);
+		entityManager->Update(dt);
 		//dialogueManager->Update(dt);
 		//bool dialogEnded = dialogueManager->Update(dt);
 		//if(dialogEnded == false) gameState = salir del dialogo
