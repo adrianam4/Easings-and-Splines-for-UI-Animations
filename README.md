@@ -165,6 +165,11 @@ When the path ends, we must reset the number of currentIterations and a bool var
     }
 
 This code, should be enough to perform a backEaseIn. But if you want to implement other easing type, is exactly the same, but changing the function you use. For example, if you need to use a exponentialEaseOut, you will just change the name of the function, keeping all the other variables like before.
+
+Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
+
+![backEaseOut Example](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/ease%20out%20example.gif)
+
 ### 2.4 Easing Functions 
 
 ## 3. Splines
