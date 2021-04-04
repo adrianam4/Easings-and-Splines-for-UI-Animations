@@ -172,6 +172,69 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 
 ### 2.4 Easing Functions 
 
+1. Back Ease In
+
+2. Back Ease Out
+
+3. Back Ease In/Out
+
+4. Bounce Ease In
+
+5. Bounce Ease Out
+
+6. Bounce Ease In/Out
+
+7. Circular Ease In
+
+8. Circular Ease Out
+
+9. Circular Ease In/Out
+
+10. Cubic Ease In
+
+11. Cubic Ease Out
+
+12. Cubic Ease In/Out
+
+13. Elastic Ease In
+
+14. Elastic Ease Out
+
+15. Elastic Ease In/Out
+
+16. Exponential Ease In
+
+17. Exponential Ease Out
+
+18. Exponential Ease In/Out
+
+19. Linear Ease
+
+20. Quad Ease In
+
+21. Quad Ease Out
+
+22. Quad Ease In/Out
+
+23. Quart Ease In
+
+24. Quart Ease Out
+
+25. Quart Ease In/Out
+
+26. Quint Ease In
+
+27. Quint Ease Out
+
+28. Quint Ease In/Out
+
+29. Sine Ease In
+
+30. Sine Ease Out
+
+31. Sine Ease In/Out 
+
+
 ## 3. Splines
 In *maths* area, a spline is a function defined piece by piece, by polynomials. In interpolating problems, spline interpolation is usually preferred over polynomial interpolation because it performs practically the same, even using low degree polynomials, while avoiding [Runge's phenomenon](https://en.wikipedia.org/wiki/Runge%27s_phenomenon) for higher degrees.
 
