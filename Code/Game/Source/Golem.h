@@ -32,7 +32,10 @@ private:
 	float position_x;
 	float position_y;
 
-	float currentFrame;
+	float currentIteration;
+	float totalIterations;
+	float initialPosition;
+	float deltaPosition;
 
 	bool easingActivated;
 };

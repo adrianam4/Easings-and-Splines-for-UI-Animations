@@ -70,17 +70,10 @@ SceneGameplay::SceneGameplay()
 
 	//Create Enemies
 
-	Enemy* skull = nullptr;
-	position = { 300,100 };
-	skull = (Enemy*)entityManager->CreateEntity(EntityType::SKULL, position);
-
 	Enemy* golem = nullptr;
 	position = { 300,200 };
 	golem = (Enemy*)entityManager->CreateEntity(EntityType::GOLEM, position);
 
-	Enemy* bat = nullptr;
-	position = { 300,300 };
-	bat = (Enemy*)entityManager->CreateEntity(EntityType::BAT, position);
 
 	/*player = new Player(PlayerType::HUNTER);
 	npc = new Npc(EntityType::NPC);*/

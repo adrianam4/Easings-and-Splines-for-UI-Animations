@@ -21,17 +21,15 @@ Golem::Golem(iPoint pos) : Enemy(EntityType::GOLEM)
 
 	font = new Font("Assets/Font/font3.xml", app->tex);
 
-	position_x = 100.0f;
-	position_y = 100.0f;
+	position_x = 0.0f;
+	position_y = 250.0f;
 
-	currentFrame = 0;
-
+	currentIteration = 0;
+	totalIterations = 180;
+	initialPosition = 0;
+	deltaPosition = 700;
 	easingActivated = false;
 
-	/*easing->currentIteration = 0;
-	easing->totalIterations = 100;
-	easing->initialPos = 100;
-	easing->deltaPos = 400;*/
 }
 
 Golem::~Golem()
@@ -49,24 +47,24 @@ bool Golem::Update(float dt)
 {
 	if (app->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
 	{
-		currentFrame = 0;
-		position_x = 100;
+		currentIteration = 0;
+		position_x = 0;
 		easingActivated = true;
 	}
 
 	if (easingActivated == true)
 	{
-		position_x = easing->linearEaseInOut(currentFrame, 100, 800, 250);
-		position_y = easing->linearEaseInOut(currentFrame, 100, 300, 250);
+		position_x = easing->backEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
 	}
 
-	if (currentFrame < 250)
+	if (currentIteration < totalIterations)
 	{
-		currentFrame++;
+		++currentIteration;
 	}
+
 	else
 	{
-		currentFrame = 0;
+		currentIteration = 0;
 		easingActivated = false;
 	}
 	
@@ -86,18 +84,6 @@ void Golem::Draw(bool showColliders)
 	SDL_Rect rect = { 2,3,bounds.w,bounds.h };
 	app->render->DrawTexture(texture, position_x, position_y, &rect);
 
-	SDL_Color color = { 255,255,255,255 };
-	app->render->DrawText(font, "GOLEM", bounds.x, bounds.y - 15, 15, 5, color);
-
-	char tmp[32] = { 0 };
-
-	sprintf_s(tmp, 32, "Health: %.0f", health);
-	color = { 0,255,0,255 };
-	app->render->DrawText(font, tmp, bounds.x + bounds.w + 5, bounds.y, 15, 5, color);
-
-	sprintf_s(tmp, 32, "Mana: %.0f", mana);
-	color = { 0,0,255,255 };
-	app->render->DrawText(font, tmp, bounds.x + bounds.w + 5, bounds.y + 20, 15, 5, color);
 }
 
 bool Golem::UnLoad()
