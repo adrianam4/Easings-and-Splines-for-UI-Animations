@@ -91,73 +91,96 @@ Now, I'll explain how splines work in our area, and how to manage them in our pr
 
 Imagine that we have a player and we want to move it by using splines. For example, back splines. We will have the following function:
 
-float position = backEaseIn(currentIteration,initialPosition,deltaPosition,totalIterations);
+{
+
+    float position = backEaseIn(currentIteration,initialPosition,deltaPosition,totalIterations);
+    
+}
 
 Our game run at 60 fps and we want that the player movement takes a total amount of 7 seconds, so our totalIterations number will be calculated like this (60 fps * 7 sec = 420 totalIterations). Now we have the totalIterations we'll need. But we also need to know on each moment which is our current iteration, and we will store that value in "currentIteration", which starts in zero and each frame it increase one unit, until currentIteration is equal to totalIterations.
 
-float totalIterations = 420;
+{
+    
+    float totalIterations = 420;
 
-float currentIteration = 0;
+    float currentIteration = 0;
 
-float position = backEaseIn(currentIteration,initialPosition,deltaPosition,totalIterations);
+    float position = backEaseIn(currentIteration,initialPosition,deltaPosition,totalIterations);
 
-++currentIteration;
-
+    ++currentIteration;
+    
+}
 Once we know the total iterations and the current iteration, we must decide which will be the initial position, and the delta position (finalPos - initialPos). In our case, let's suppose that the initial position value is "initialPosition = 0", and that we desire moving 500 pixels.
 
-float totalIterations = 420;
+{
 
-float currentIteration = 0;
+    float totalIterations = 420;
 
-float initialPosition = 0;
+    float currentIteration = 0;
 
-float deltaPosition = 500;
+    float initialPosition = 0;
 
-float position = backEaseIn(currentIteration,initialPosition,deltaPosition,totalIterations);
+    float deltaPosition = 500;
+    
+}
 
-++currentIteration;
+{
+
+    float position = backEaseIn(currentIteration,initialPosition,deltaPosition,totalIterations);
+
+    ++currentIteration;
+    
+}
 
 Right now, this function will return the speed the player needs at each frame to arrive from initialPosition, until finalPosition.
 
 When the path ends, we must reset the number of currentIterations and a bool variable to manage if the easing are activated or not. We must do it because if not, the movement could be infinite. The code will looks more or less like this:
 
-bool easingActivated = false;
-
-totalIterations = 420;
-
-currentIteration = 0;
-
-initialPosition = 0;
-
-deltaPosition = 500;
-
-if (app->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
-
 {
+
+    bool easingActivated = false;
+
+    totalIterations = 420;
 
     currentIteration = 0;
-    
-    position = 0;
-    
-    easingActivated = true;
-    
+
+    initialPosition = 0;
+
+    deltaPosition = 500;
+
 }
 
-if (easingActivated = true)
 {
-    position = backEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
-}
 
-if (currentIteration < totalIterations)
-{
-    ++currentIteration;
-}
+    if (app->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
 
-else
-{
-    currentIteration = 0;
+    {
+
+        currentIteration = 0;
     
-    easingActivated = false;
+        position = 0;
+    
+        easingActivated = true;
+    
+    }
+
+    if (easingActivated = true)
+    {
+        position = backEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+    }
+
+    if (currentIteration < totalIterations)
+    {
+        ++currentIteration;
+    }
+
+    else
+    {
+        currentIteration = 0;
+    
+        easingActivated = false;
+    }
+
 }
 
 This code, should be enough to perform a backEaseIn. But if you want to implement other easing type, is exactly the same, but changing the function you use. For example, if you need to use a exponentialEaseOut, you will just change the name of the function, keeping all the other variables like before.
