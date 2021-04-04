@@ -176,73 +176,269 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 
 1. Back Ease In
 
-    float Easing::backEaseIn(float t, float b, float c, float d)
-    {
-	    float s = 1.70158f;
-	    float postFix = t /= d;
-	    return c * (postFix)*t * ((s + 1) * t - s) + b;
-    }
+    		float Easing::backEaseIn(float t, float b, float c, float d)
+    		{
+	   	 float s = 1.70158f;
+	   	 float postFix = t /= d;
+	   	 return c * (postFix)*t * ((s + 1) * t - s) + b;
+    		}
 
 2. Back Ease Out
 
+		float Easing::backEaseOut(float t, float b, float c, float d)
+		{
+			float s = 1.70158f;
+			return c * ((t = t / d - 1) * t * ((s + 1) * t + s) + 1) + b;
+		}
+
 3. Back Ease In/Out
+
+		float Easing::backEaseInOut(float t, float b, float c, float d)
+		{
+			float s = 1.70158f;
+			if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525f)) + 1) * t - s)) + b;
+			float postFix = t -= 2;
+			return c / 2 * ((postFix)*t * (((s *= (1.525f)) + 1) * t + s) + 2) + b;
+		}
 
 4. Bounce Ease In
 
+		float Easing::bounceEaseIn(float t, float b, float c, float d)
+		{
+			return c - bounceEaseOut(d - t, 0, c, d) + b;
+		}
+
 5. Bounce Ease Out
+
+		float Easing::bounceEaseOut(float t, float b, float c, float d)
+		{
+			if ((t /= d) < (1 / 2.75f)) {
+				return c * (7.5625f * t * t) + b;
+			}
+			else if (t < (2 / 2.75f)) {
+				float postFix = t -= (1.5f / 2.75f);
+				return c * (7.5625f * (postFix)*t + .75f) + b;
+			}
+			else if (t < (2.5 / 2.75)) {
+				float postFix = t -= (2.25f / 2.75f);
+				return c * (7.5625f * (postFix)*t + .9375f) + b;
+			}
+			else {
+				float postFix = t -= (2.625f / 2.75f);
+				return c * (7.5625f * (postFix)*t + .984375f) + b;
+			}
+		}
 
 6. Bounce Ease In/Out
 
+		float Easing::bounceEaseInOut(float t, float b, float c, float d)
+		{
+			if (t < d / 2) return bounceEaseIn(t * 2, 0, c, d) * .5f + b;
+			else return bounceEaseOut(t * 2 - d, 0, c, d) * .5f + c * .5f + b;
+		}
+
 7. Circular Ease In
+
+		float Easing::circularEaseIn(float t, float b, float c, float d)
+		{
+			return -c * (sqrt(1 - (t /= d) * t) - 1) + b;
+		}
 
 8. Circular Ease Out
 
+		float Easing::circularEaseOut(float t, float b, float c, float d)
+		{
+			return c * sqrt(1 - (t = t / d - 1) * t) + b;
+		}
+
 9. Circular Ease In/Out
+
+		float Easing::circularEaseInOut(float t, float b, float c, float d)
+		{
+			if ((t /= d / 2) < 1) return -c / 2 * (sqrt(1 - t * t) - 1) + b;
+			return c / 2 * (sqrt(1 - t * (t -= 2)) + 1) + b;
+		}
 
 10. Cubic Ease In
 
+		float Easing::cubicEaseIn(float t, float b, float c, float d)
+		{
+			return c * (t /= d) * t * t + b;
+		}
+
 11. Cubic Ease Out
+
+		float Easing::cubicEaseOut(float t, float b, float c, float d)
+		{
+			return c * ((t = t / d - 1) * t * t + 1) + b;
+		}
 
 12. Cubic Ease In/Out
 
+		float Easing::cubicEaseInOut(float t, float b, float c, float d)
+		{
+			if ((t /= d / 2) < 1) return c / 2 * t * t * t + b;
+			return c / 2 * ((t -= 2) * t * t + 2) + b;
+		}
+
 13. Elastic Ease In
+
+		float Easing::elasticEaseIn(float t, float b, float c, float d)
+		{
+			if (t == 0) return b;  if ((t /= d) == 1) return b + c;
+			float p = d * .3f;
+			float a = c;
+			float s = p / 4;
+			float postFix = a * pow(2, 10 * (t -= 1));
+			return -(postFix * sin((t * d - s) * (2 * PI) / p)) + b;
+		}
 
 14. Elastic Ease Out
 
+		float Easing::elasticEaseOut(float t, float b, float c, float d)
+		{
+			if (t == 0) return b;  if ((t /= d) == 1) return b + c;
+			float p = d * .3f;
+			float a = c;
+			float s = p / 4;
+			return (a * pow(2, -10 * t) * sin((t * d - s) * (2 * PI) / p) + c + b);
+		}
+
 15. Elastic Ease In/Out
+
+		float Easing::elasticEaseInOut(float t, float b, float c, float d)
+		{
+			if (t == 0) return b;  if ((t /= d / 2) == 2) return b + c;
+			float p = d * (.3f * 1.5f);
+			float a = c;
+			float s = p / 4;
+
+			if (t < 1)
+			{
+				float postFix = a * pow(2, 10 * (t -= 1));
+				return -.5f * (postFix * sin((t * d - s) * (2 * PI) / p)) + b;
+			}
+			float postFix = a * pow(2, -10 * (t -= 1));
+			return postFix * sin((t * d - s) * (2 * PI) / p) * .5f + c + b;
+		}
 
 16. Exponential Ease In
 
+		float Easing::exponentialEaseIn(float t, float b, float c, float d)
+		{
+			return (t == 0) ? b : c * pow(2, 10 * (t / d - 1)) + b;
+		}	
+
 17. Exponential Ease Out
+
+		float Easing::exponentialEaseOut(float t, float b, float c, float d)
+		{
+			return (t == d) ? b + c : c * (-pow(2, -10 * t / d) + 1) + b;
+		}
 
 18. Exponential Ease In/Out
 
+		float Easing::exponentialEaseInOut(float t, float b, float c, float d)
+		{
+			if (t == 0) return b;
+			if (t == d) return b + c;
+			if ((t /= d / 2) < 1) return c / 2 * pow(2, 10 * (t - 1)) + b;
+			return c / 2 * (-pow(2, -10 * --t) + 2) + b;
+		}
+
 19. Linear Ease
+
+		float Easing::linearEaseNone(float t, float b, float c, float d)
+		{
+			return c * t / d + b;
+		}
 
 20. Quad Ease In
 
+		float Easing::quadEaseIn(float t, float b, float c, float d)
+		{
+			return c * (t /= d) * t + b;
+		}
+
 21. Quad Ease Out
+
+		float Easing::quadEaseOut(float t, float b, float c, float d)
+		{
+			return -c * (t /= d) * (t - 2) + b;
+		}
 
 22. Quad Ease In/Out
 
+		float Easing::quadEaseInOut(float t, float b, float c, float d)
+		{
+			if ((t /= d / 2) < 1) return ((c / 2) * (t * t)) + b;
+			return -c / 2 * (((t - 2) * (--t)) - 1) + b;
+		}
+
 23. Quart Ease In
+
+		float Easing::quartEaseIn(float t, float b, float c, float d)
+		{
+			return c * (t /= d) * t * t * t + b;
+		}
 
 24. Quart Ease Out
 
+		float Easing::quartEaseOut(float t, float b, float c, float d)
+		{
+			return -c * ((t = t / d - 1) * t * t * t - 1) + b;
+		}
+
 25. Quart Ease In/Out
+
+		float Easing::quartEaseInOut(float t, float b, float c, float d)
+		{
+			if ((t /= d / 2) < 1) return c / 2 * t * t * t * t + b;
+			return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
+		}
 
 26. Quint Ease In
 
+		float Easing::quintEaseIn(float t, float b, float c, float d)
+		{
+			return c * (t /= d) * t * t * t * t + b;
+		}
+
 27. Quint Ease Out
+
+		float Easing::quintEaseOut(float t, float b, float c, float d)
+		{
+			return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
+		}
 
 28. Quint Ease In/Out
 
+		float Easing::quintEaseInOut(float t, float b, float c, float d) 
+		{
+			if ((t /= d / 2) < 1) return c / 2 * t * t * t * t * t + b;
+			return c / 2 * ((t -= 2) * t * t * t * t + 2) + b;
+		}
+
 29. Sine Ease In
+
+		float Easing::sineEaseIn(float t, float b, float c, float d)
+		{
+			return -c * cos(t / d * (PI / 2)) + c + b;
+		}
 
 30. Sine Ease Out
 
+		float Easing::sineEaseOut(float t, float b, float c, float d)
+		{
+			return c * sin(t / d * (PI / 2)) + b;
+		}
+
 31. Sine Ease In/Out 
 
+		float Easing::sineEaseInOut(float t, float b, float c, float d)
+		{
+			return -c / 2 * (cos(PI * t / d) - 1) + b;
+		}
 
 ## 3. Splines
 In *maths* area, a spline is a function defined piece by piece, by polynomials. In interpolating problems, spline interpolation is usually preferred over polynomial interpolation because it performs practically the same, even using low degree polynomials, while avoiding [Runge's phenomenon](https://en.wikipedia.org/wiki/Runge%27s_phenomenon) for higher degrees.
