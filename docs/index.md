@@ -4,17 +4,19 @@
 
 2. [Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#2-easings)
 
-   2.1. [Types of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#21-types-of-easings)
+    2.1. [Types of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#21-types-of-easings)
    
-   2.2. [Uses of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#22-uses-of-easings)
+    2.2. [Uses of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#22-uses-of-easings)
    
-   2.3. [How does it work](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#23-how-does-it-work)
+    2.3. [How does it work](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#23-how-does-it-work)
    
-   2.4. [Easing Functions](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#24-easing-functions)
+    2.4. [Easing Functions](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#24-easing-functions)
 
 3. [Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#3-splines)
+
+    3.1. [Types of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/README.md#31-types-of-splines) 
    
-   3.1. [Uses of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#31-uses-of-splines)
+    3.2. [Uses of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/README.md#32-uses-of-splines)
 
 4. [Improvements](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#4-improvements)
 
@@ -39,11 +41,185 @@ All the easing functions depends on four parameters:
 ![Bouncing Ball Example](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/bouncing_ball.gif)
 
 ### 2.1 Types Of Easings
+There are some different types of easings, which can be sorted like that:
+
+First of all, there are 3 easings types:
+   1. Ease in: This type of easing, describes the movement of an object with POSITIVE acceleration.
+   2. Ease Out: This type of easing, describes the movement of an object with NEGATIVE acceleration.
+   3. Mixed: This one, mixes the both previous types (Usually describes a positive acceleration first, and then a negative one).
+   
+   ![Types of easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/types%20of%20easings.png)
+
+That 3 types were the biggest types of easing, the most global ones. But, there is a lot of specific functions you can use to describe movements based on easings. 
+
+- Standard Functions (Uses pows from 1-6)
+
+  1.Linear: Using a pow of 1, it describes a linear movement with no acceleration (constant speed).
+ 
+  2.Quad: Describes a movement accelerated, where the speed is increased by a pow of 2.
+  
+  3.Cubic: Describes a movement accelerated, where the speed is increased by a pow of 3.
+  
+  4.Quart: Describes a movement accelerated, where the speed is increased by a pow of 4.
+  
+  5.Quint or Strong: Describes a movement accelerated, where the speed is increased by a pow of 5.
+   
+  6.Circular: Uses a pow of 6, and describes a circular movement.
+   
+- Complex Functions
+
+  1.Sinusoidal: Is achieved by using the mathematical sin and cos methods.
+  
+  2.Bounce: This one is used for recreate how a bouncing ball would be moved by gravity force. Applying first an ease in, and then an ease out.
+  
+  3.Back: On this one, the object goes until an objective position, and then, it comes back. 
+  
+  4.Exponential: The exponential function is similar to the standard ones, but this one, increase or/and decrease exponentially to the initial value.
+  
+  5.Elastic: The elastic function is needed when you want to describe a movement where your object is accelerated and decelerated so smoothly. 
+   
 ### 2.2 Uses of Easings
+
+Like said previously, easings are used to create animations that describes accelerated movements by an easy way, because if that animations were created frame by frame, it would suppose a big amount of work, which is boring and unnecessary. Almost all the Software programs dedicated to 2D-3D Animation (For Example, Toon Boom Harmony), uses the easing functions (and most of them let the users previsualize the easing curves ). That allow the users to avoid creating hundreds of frames for a simple movement, and instead it does it automatically taking into account the distance between frames. Easings are also used in the area of Camera views, where the easing functions, allow the users to create a smooth experience and saving a lot of time and work, because they dont need to "Hard Code" the camera progress.
+
+All this is possible thanks to all the Programmers or Coders that implement all the math functions explained [here](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#21-types-of-easings).
+
+![Uses of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/easing%20usability.gif)
+
 ### 2.3 How Does It Work
+Now, I'll explain how splines work in our area, and how to manage them in our project.
+
+Imagine that we have a player and we want to move it by using splines. For example, back splines. We will have the following function:
+
+    float position = backEaseIn(currentIteration,initialPosition,deltaPosition,totalIterations);
+
+Our game run at 60 fps and we want that the player movement takes a total amount of 7 seconds, so our totalIterations number will be calculated like this (60 fps * 7 sec = 420 totalIterations). Now we have the totalIterations we'll need. But we also need to know on each moment which is our current iteration, and we will store that value in "currentIteration", which starts in zero and each frame it increase one unit, until currentIteration is equal to totalIterations.
+    
+    float totalIterations = 420;
+
+    float currentIteration = 0;
+
+    float position = backEaseIn(currentIteration,initialPosition,deltaPosition,totalIterations);
+
+    ++currentIteration;
+    
+Once we know the total iterations and the current iteration, we must decide which will be the initial position, and the delta position (finalPos - initialPos). In our case, let's suppose that the initial position value is "initialPosition = 0", and that we desire moving 500 pixels.
+
+    float totalIterations = 420;
+
+    float currentIteration = 0;
+
+    float initialPosition = 0;
+
+    float deltaPosition = 500;
+
+
+
+    float position = backEaseIn(currentIteration,initialPosition,deltaPosition,totalIterations);
+
+    ++currentIteration;
+    
+
+
+Right now, this function will return the speed the player needs at each frame to arrive from initialPosition, until finalPosition.
+
+When the path ends, we must reset the number of currentIterations and a bool variable to manage if the easing are activated or not. We must do it because if not, the movement could be infinite. The code will looks more or less like this:
+
+    bool easingActivated = false;
+
+    totalIterations = 420;
+
+    currentIteration = 0;
+
+    initialPosition = 0;
+
+    deltaPosition = 500;
+
+
+    if (app->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
+    {
+
+        currentIteration = 0;
+    
+        position = 0;
+    
+        easingActivated = true;
+    
+    }
+
+    if (easingActivated = true)
+    {
+        position = backEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+    }
+
+    if (currentIteration < totalIterations)
+    {
+        ++currentIteration;
+    }
+
+    else
+    {
+        currentIteration = 0;
+    
+        easingActivated = false;
+    }
+
+This code, should be enough to perform a backEaseIn. But if you want to implement other easing type, is exactly the same, but changing the function you use. For example, if you need to use a exponentialEaseOut, you will just change the name of the function, keeping all the other variables like before.
+
+Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
+
+![backEaseOut Example](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/ease%20out%20example.gif)
+
 ### 2.4 Easing Functions 
+
 ## 3. Splines
-### 3.1 Uses Of Splines
+In *maths* area, a spline is a function defined piece by piece, by polynomials. In interpolating problems, spline interpolation is usually preferred over polynomial interpolation because it performs practically the same, even using low degree polynomials, while avoiding [Runge's phenomenon](https://en.wikipedia.org/wiki/Runge%27s_phenomenon) for higher degrees.
+
+In *computer science*, when you talk about splines, you're talking about a piecewise polynomial curve. Splines are popular curves on this field because of the simplicity of their construction, their ease and accuracy of evaluation, and their capacity to approximate complex shapes through curve fitting and interactive curve design.
+
+Now, let's see it from the field we're interested on, the Animation. Here, a spline is another method for creating animations on an easy way. Using splines, you will be able to create smooth animations just moving curves on a graph. So, using splines, you can do your work easyly, saving your time and effort.
+
+There are some different types of splines, let's see them.
+### 3.1 Types Of Splines
+1. Bezier: Is just a spline defined "point by point", by different Bezier curves.
+
+![Bezier](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/bezier.PNG)
+
+2. Cubic: This one gives an interpolation polynomial that is smoother and has less error than some other interpolating polynomials. It's used to avoid the problem of Runge's phenomenon.
+
+![Cubic](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/cubic%20spline.PNG)
+
+3. B-Spline: Is a spline function that has minimal support with respect to a given degree, smoothness, and domain partition. All the spline functions of a given degree can be expressed as a linear combination of B-splines.
+
+![b-spline](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/b-spline.PNG)
+
+4. Linear: Is a continuous function defined by linear polynomials. So, it's a continuous set of straight lines.
+
+![linear](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/linear%20spline.PNG)
+
+5. NURBS (Non-uniform rational B-Spline): This one is just a mathematical model using B-Splines, usually used in computer graphics for representing curves and surfaces. It gives a great flexibility and precision for handling both analytic and model shapes.
+
+![nurbs](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/nurbs%20spline.PNG)
+
+6. Catmull-Rom: A catmull-rom spline is a curve named like this because of his creators ([Edwin Catmull](https://en.wikipedia.org/wiki/Edwin_Catmull) and [Raphael Rom](https://es.wikipedia.org/w/index.php?title=Raphael_Rom&action=edit&redlink=1)). The main advantage of this techinque is that the original set of points are also part of the control points from the curve spline.
+
+![catmull](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/catmull-rom%20spline.PNG)
+
+### 3.2 Uses Of Splines
+The splines are very used in a lot of areas, like I said [before](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#3-splines). But now, I'll take a look on a more specific area, Videogames:
+
+In videogames, splines have some uses, but the main is creating paths for the enemies to follow. If you want a smooth motion, the path of the enemies should be continuous (just what splines offers). Other common use of splines in videogames is to design and then define the necessary experience needed to increse levels. Splines are also used in 3D and VR videogames, taking a great importance on camera views, in order to give a smooth camera movement in games where the camera used is the first person (First Person Shooter usually). Moreover, splines are used to create most smoother animations in videogames (also in animation films).
+Here we have some graphic examples of what I have said on the previous lines:
+
+![doom](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/doom%20eternal.gif)
+
+Here, we can see how splines are used in "[Doom Eternal](https://en.wikipedia.org/wiki/Doom_Eternal)" to give a smooth camera movement to the players.
+
+![crash](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/crash.gif)
+
+On "[Crash Bandiccot: N.Sane Trilogy](https://en.wikipedia.org/wiki/Crash_Bandicoot_N._Sane_Trilogy)", splines are used to define the path the apples follow until they arrive to his destiny.
+
+
 ## 4. Improvements
 ## 5. References
 
