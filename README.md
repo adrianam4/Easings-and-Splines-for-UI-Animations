@@ -645,6 +645,10 @@ I feel that the main goal I wanted to achieve is done. I created a C++ Library t
 3. I created a enum class that stored the easing type (cubic,bounce,linear,etc...), but when I tried to use it, the game crashes, so I created that class, but it's useless and I had to create extra variables in order to store the easing type I wanted. 
 4. May be it would be possible to create just a few functions (instead the 33 that I've created), that recieving the easing type as parameter, this function reproduce the easing you want.
 
+<p align="center">
+	<img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/improvements.jpg">
+</p>
+
 ## 5. References
 https://medium.com/motion-in-interaction/animation-principles-in-ui-design-understanding-easing-bea05243fe3
 
