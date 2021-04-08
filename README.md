@@ -183,6 +183,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 	   	 return c * (postFix)*t * ((s + 1) * t - s) + b;
     		}
 
+![backIn](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInBack.PNG)
+
 2. Back Ease Out
 
 		float Easing::backEaseOut(float t, float b, float c, float d)
@@ -190,6 +192,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			float s = 1.70158f;
 			return c * ((t = t / d - 1) * t * ((s + 1) * t + s) + 1) + b;
 		}
+
+![backOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutBack.PNG)
 
 3. Back Ease In/Out
 
@@ -201,12 +205,16 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return c / 2 * ((postFix)*t * (((s *= (1.525f)) + 1) * t + s) + 2) + b;
 		}
 
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutBack.PNG)
+
 4. Bounce Ease In
 
 		float Easing::bounceEaseIn(float t, float b, float c, float d)
 		{
 			return c - bounceEaseOut(d - t, 0, c, d) + b;
 		}
+
+![BounceIn](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInBounce.PNG)
 
 5. Bounce Ease Out
 
@@ -228,6 +236,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 				return c * (7.5625f * (postFix)*t + .984375f) + b;
 			}
 		}
+		
+![BounceOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutBounce.PNG)
 
 6. Bounce Ease In/Out
 
@@ -236,6 +246,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			if (t < d / 2) return bounceEaseIn(t * 2, 0, c, d) * .5f + b;
 			else return bounceEaseOut(t * 2 - d, 0, c, d) * .5f + c * .5f + b;
 		}
+		
+![BounceInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutBounce.PNG)
 
 7. Circular Ease In
 
@@ -243,6 +255,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		{
 			return -c * (sqrt(1 - (t /= d) * t) - 1) + b;
 		}
+		
+![CircularIn](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInCirc.PNG)
 
 8. Circular Ease Out
 
@@ -250,6 +264,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		{
 			return c * sqrt(1 - (t = t / d - 1) * t) + b;
 		}
+		
+![CircularOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutCirc.PNG)
 
 9. Circular Ease In/Out
 
@@ -258,6 +274,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			if ((t /= d / 2) < 1) return -c / 2 * (sqrt(1 - t * t) - 1) + b;
 			return c / 2 * (sqrt(1 - t * (t -= 2)) + 1) + b;
 		}
+		
+![CircularInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutCirc.PNG)
 
 10. Cubic Ease In
 
@@ -266,12 +284,16 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return c * (t /= d) * t * t + b;
 		}
 
+![CubicIn](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInCubic.PNG)
+
 11. Cubic Ease Out
 
 		float Easing::cubicEaseOut(float t, float b, float c, float d)
 		{
 			return c * ((t = t / d - 1) * t * t + 1) + b;
 		}
+
+![CubicOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutCubic.PNG)
 
 12. Cubic Ease In/Out
 
@@ -280,6 +302,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			if ((t /= d / 2) < 1) return c / 2 * t * t * t + b;
 			return c / 2 * ((t -= 2) * t * t + 2) + b;
 		}
+
+![CubicInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutCubic.PNG)
 
 13. Elastic Ease In
 
@@ -293,6 +317,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return -(postFix * sin((t * d - s) * (2 * PI) / p)) + b;
 		}
 
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInElastic.PNG)
+
 14. Elastic Ease Out
 
 		float Easing::elasticEaseOut(float t, float b, float c, float d)
@@ -303,6 +329,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			float s = p / 4;
 			return (a * pow(2, -10 * t) * sin((t * d - s) * (2 * PI) / p) + c + b);
 		}
+
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutElastic.PNG)
 
 15. Elastic Ease In/Out
 
@@ -322,6 +350,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return postFix * sin((t * d - s) * (2 * PI) / p) * .5f + c + b;
 		}
 
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutElastic.PNG)
+
 16. Exponential Ease In
 
 		float Easing::exponentialEaseIn(float t, float b, float c, float d)
@@ -329,12 +359,16 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return (t == 0) ? b : c * pow(2, 10 * (t / d - 1)) + b;
 		}	
 
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInExpo.PNG)
+
 17. Exponential Ease Out
 
 		float Easing::exponentialEaseOut(float t, float b, float c, float d)
 		{
 			return (t == d) ? b + c : c * (-pow(2, -10 * t / d) + 1) + b;
 		}
+
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutExpo.PNG)
 
 18. Exponential Ease In/Out
 
@@ -346,12 +380,16 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return c / 2 * (-pow(2, -10 * --t) + 2) + b;
 		}
 
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutExpo.PNG)
+
 19. Linear Ease
 
 		float Easing::linearEaseNone(float t, float b, float c, float d)
 		{
 			return c * t / d + b;
 		}
+
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/linearEase.PNG)
 
 20. Quad Ease In
 
@@ -360,12 +398,16 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return c * (t /= d) * t + b;
 		}
 
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easiInQuad.PNG)
+
 21. Quad Ease Out
 
 		float Easing::quadEaseOut(float t, float b, float c, float d)
 		{
 			return -c * (t /= d) * (t - 2) + b;
 		}
+
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutQuad.PNG)
 
 22. Quad Ease In/Out
 
@@ -375,6 +417,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return -c / 2 * (((t - 2) * (--t)) - 1) + b;
 		}
 
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutQuad.PNG)
+
 23. Quart Ease In
 
 		float Easing::quartEaseIn(float t, float b, float c, float d)
@@ -382,12 +426,16 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return c * (t /= d) * t * t * t + b;
 		}
 
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInQuart.PNG)
+
 24. Quart Ease Out
 
 		float Easing::quartEaseOut(float t, float b, float c, float d)
 		{
 			return -c * ((t = t / d - 1) * t * t * t - 1) + b;
 		}
+
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutQuart.PNG)
 
 25. Quart Ease In/Out
 
@@ -397,6 +445,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
 		}
 
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutQuart.PNG)
+
 26. Quint Ease In
 
 		float Easing::quintEaseIn(float t, float b, float c, float d)
@@ -404,12 +454,16 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return c * (t /= d) * t * t * t * t + b;
 		}
 
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInQuint.PNG)
+
 27. Quint Ease Out
 
 		float Easing::quintEaseOut(float t, float b, float c, float d)
 		{
 			return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
 		}
+
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutQuint.PNG)
 
 28. Quint Ease In/Out
 
@@ -419,12 +473,16 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return c / 2 * ((t -= 2) * t * t * t * t + 2) + b;
 		}
 
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutQuint.PNG)
+
 29. Sine Ease In
 
 		float Easing::sineEaseIn(float t, float b, float c, float d)
 		{
 			return -c * cos(t / d * (PI / 2)) + c + b;
 		}
+
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInSine.PNG)
 
 30. Sine Ease Out
 
@@ -433,12 +491,16 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			return c * sin(t / d * (PI / 2)) + b;
 		}
 
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutSine.PNG)
+
 31. Sine Ease In/Out 
 
 		float Easing::sineEaseInOut(float t, float b, float c, float d)
 		{
 			return -c / 2 * (cos(PI * t / d) - 1) + b;
 		}
+
+![backInOut](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutSine.PNG)
 
 ## 3. Splines
 In *maths* area, a spline is a function defined piece by piece, by polynomials. In interpolating problems, spline interpolation is usually preferred over polynomial interpolation because it performs practically the same, even using low degree polynomials, while avoiding [Runge's phenomenon](https://en.wikipedia.org/wiki/Runge%27s_phenomenon) for higher degrees.
