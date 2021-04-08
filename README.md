@@ -643,7 +643,7 @@ I feel that the main goal I wanted to achieve is done. I created a C++ Library t
 1. Having a code even more polished, and easier to understand.
 2. I would have liked that the Library were defined as a static library, instead creating a source and a header file.
 3. I created a enum class that stored the easing type (cubic,bounce,linear,etc...), but when I tried to use it, the game crashes, so I created that class, but it's useless and I had to create extra variables in order to store the easing type I wanted. 
-4. May be it would be possible to create just a few functions (instead the 33 that I created), which recieving the easing type as parameter, they reproduce the easing you want.
+4. May be it would be possible to create just a few functions (instead the 33 that I've created), that recieving the easing type as parameter, this function reproduce the easing you want.
 
 ## 5. References
 https://medium.com/motion-in-interaction/animation-principles-in-ui-design-understanding-easing-bea05243fe3
