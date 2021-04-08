@@ -187,8 +187,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
     		float Easing::backEaseIn(float t, float b, float c, float d)
     		{
 	   	 float s = 1.70158f;
-	   	 float postFix = t /= d;
-	   	 return c * (postFix)*t * ((s + 1) * t - s) + b;
+	   	 float aux = t /= d;
+	   	 return c * (aux)*t * ((s + 1) * t - s) + b;
     		}
 
    
@@ -214,8 +214,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		{
 			float s = 1.70158f;
 			if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525f)) + 1) * t - s)) + b;
-			float postFix = t -= 2;
-			return c / 2 * ((postFix)*t * (((s *= (1.525f)) + 1) * t + s) + 2) + b;
+			float aux = t -= 2;
+			return c / 2 * ((aux)*t * (((s *= (1.525f)) + 1) * t + s) + 2) + b;
 		}
 
 <p align="center">
@@ -241,16 +241,16 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 				return c * (7.5625f * t * t) + b;
 			}
 			else if (t < (2 / 2.75f)) {
-				float postFix = t -= (1.5f / 2.75f);
-				return c * (7.5625f * (postFix)*t + .75f) + b;
+				float aux = t -= (1.5f / 2.75f);
+				return c * (7.5625f * (aux)*t + .75f) + b;
 			}
 			else if (t < (2.5 / 2.75)) {
-				float postFix = t -= (2.25f / 2.75f);
-				return c * (7.5625f * (postFix)*t + .9375f) + b;
+				float aux = t -= (2.25f / 2.75f);
+				return c * (7.5625f * (aux)*t + .9375f) + b;
 			}
 			else {
-				float postFix = t -= (2.625f / 2.75f);
-				return c * (7.5625f * (postFix)*t + .984375f) + b;
+				float aux = t -= (2.625f / 2.75f);
+				return c * (7.5625f * (aux)*t + .984375f) + b;
 			}
 		}
 		
@@ -346,8 +346,8 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 			float p = d * .3f;
 			float a = c;
 			float s = p / 4;
-			float postFix = a * pow(2, 10 * (t -= 1));
-			return -(postFix * sin((t * d - s) * (2 * PI) / p)) + b;
+			float aux = a * pow(2, 10 * (t -= 1));
+			return -(aux * sin((t * d - s) * (2 * PI) / p)) + b;
 		}
 
 <p align="center">
@@ -380,11 +380,11 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 
 			if (t < 1)
 			{
-				float postFix = a * pow(2, 10 * (t -= 1));
-				return -.5f * (postFix * sin((t * d - s) * (2 * PI) / p)) + b;
+				float aux = a * pow(2, 10 * (t -= 1));
+				return -.5f * (aux * sin((t * d - s) * (2 * PI) / p)) + b;
 			}
-			float postFix = a * pow(2, -10 * (t -= 1));
-			return postFix * sin((t * d - s) * (2 * PI) / p) * .5f + c + b;
+			float aux = a * pow(2, -10 * (t -= 1));
+			return aux * sin((t * d - s) * (2 * PI) / p) * .5f + c + b;
 		}
 
 <p align="center">
