@@ -38,4 +38,7 @@ private:
 	float deltaPosition;
 
 	bool easingActivated;
+	int easingType;
+
+	const char* tmp = " ";
 };
