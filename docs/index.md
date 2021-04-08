@@ -38,7 +38,9 @@ All the easing functions depends on four parameters:
 - Change in distance (c) which is the difference of distance between the beggining position and the final one (f-b).
 - Duration (d) that represent the amount of total iterations you want for complete your animation.
 
-![Bouncing Ball Example](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/bouncing_ball.gif)
+<p align="left">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/bouncing_ball.gif">
+</p>
 
 ### 2.1 Types Of Easings
 There are some different types of easings, which can be sorted like that:
@@ -48,7 +50,9 @@ First of all, there are 3 easings types:
    2. Ease Out: This type of easing, describes the movement of an object with NEGATIVE acceleration.
    3. Mixed: This one, mixes the both previous types (Usually describes a positive acceleration first, and then a negative one).
    
-   ![Types of easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/types%20of%20easings.png)
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/types%20of%20easings.png">
+</p>
 
 That 3 types were the biggest types of easing, the most global ones. But, there is a lot of specific functions you can use to describe movements based on easings. 
 
@@ -84,7 +88,9 @@ Like said previously, easings are used to create animations that describes accel
 
 All this is possible thanks to all the Programmers or Coders that implement all the math functions explained [here](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#21-types-of-easings).
 
-![Uses of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/easing%20usability.gif)
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/easing%20usability.gif">
+</p>
 
 ### 2.3 How Does It Work
 Now, I'll explain how splines work in our area, and how to manage them in our project.
@@ -168,9 +174,403 @@ This code, should be enough to perform a backEaseIn. But if you want to implemen
 
 Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 
-![backEaseOut Example](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/ease%20out%20example.gif)
-
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/ease%20out%20example.gif">
+</p>
 ### 2.4 Easing Functions 
+
+
+
+1. Back Ease In
+
+    		float Easing::backEaseIn(float t, float b, float c, float d)
+    		{
+	   	 float s = 1.70158f;
+	   	 float postFix = t /= d;
+	   	 return c * (postFix)*t * ((s + 1) * t - s) + b;
+    		}
+
+   
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInBack.PNG">
+</p>
+
+2. Back Ease Out
+
+		float Easing::backEaseOut(float t, float b, float c, float d)
+		{
+			float s = 1.70158f;
+			return c * ((t = t / d - 1) * t * ((s + 1) * t + s) + 1) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutBack.PNG">
+</p>
+
+3. Back Ease In/Out
+
+		float Easing::backEaseInOut(float t, float b, float c, float d)
+		{
+			float s = 1.70158f;
+			if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525f)) + 1) * t - s)) + b;
+			float postFix = t -= 2;
+			return c / 2 * ((postFix)*t * (((s *= (1.525f)) + 1) * t + s) + 2) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutBack.PNG">
+</p>
+
+4. Bounce Ease In
+
+		float Easing::bounceEaseIn(float t, float b, float c, float d)
+		{
+			return c - bounceEaseOut(d - t, 0, c, d) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInBounce.PNG">
+</p>
+
+5. Bounce Ease Out
+
+		float Easing::bounceEaseOut(float t, float b, float c, float d)
+		{
+			if ((t /= d) < (1 / 2.75f)) {
+				return c * (7.5625f * t * t) + b;
+			}
+			else if (t < (2 / 2.75f)) {
+				float postFix = t -= (1.5f / 2.75f);
+				return c * (7.5625f * (postFix)*t + .75f) + b;
+			}
+			else if (t < (2.5 / 2.75)) {
+				float postFix = t -= (2.25f / 2.75f);
+				return c * (7.5625f * (postFix)*t + .9375f) + b;
+			}
+			else {
+				float postFix = t -= (2.625f / 2.75f);
+				return c * (7.5625f * (postFix)*t + .984375f) + b;
+			}
+		}
+		
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutBounce.PNG">
+</p>
+
+6. Bounce Ease In/Out
+
+		float Easing::bounceEaseInOut(float t, float b, float c, float d)
+		{
+			if (t < d / 2) return bounceEaseIn(t * 2, 0, c, d) * .5f + b;
+			else return bounceEaseOut(t * 2 - d, 0, c, d) * .5f + c * .5f + b;
+		}
+		
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutBounce.PNG">
+</p>
+
+7. Circular Ease In
+
+		float Easing::circularEaseIn(float t, float b, float c, float d)
+		{
+			return -c * (sqrt(1 - (t /= d) * t) - 1) + b;
+		}
+		
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInCirc.PNG">
+</p>
+
+8. Circular Ease Out
+
+		float Easing::circularEaseOut(float t, float b, float c, float d)
+		{
+			return c * sqrt(1 - (t = t / d - 1) * t) + b;
+		}
+		
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutCirc.PNG">
+</p>
+
+9. Circular Ease In/Out
+
+		float Easing::circularEaseInOut(float t, float b, float c, float d)
+		{
+			if ((t /= d / 2) < 1) return -c / 2 * (sqrt(1 - t * t) - 1) + b;
+			return c / 2 * (sqrt(1 - t * (t -= 2)) + 1) + b;
+		}
+		
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutCirc.PNG">
+</p>
+
+10. Cubic Ease In
+
+		float Easing::cubicEaseIn(float t, float b, float c, float d)
+		{
+			return c * (t /= d) * t * t + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInCubic.PNG">
+</p>
+
+11. Cubic Ease Out
+
+		float Easing::cubicEaseOut(float t, float b, float c, float d)
+		{
+			return c * ((t = t / d - 1) * t * t + 1) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutCubic.PNG">
+</p>
+
+12. Cubic Ease In/Out
+
+		float Easing::cubicEaseInOut(float t, float b, float c, float d)
+		{
+			if ((t /= d / 2) < 1) return c / 2 * t * t * t + b;
+			return c / 2 * ((t -= 2) * t * t + 2) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutCubic.PNG">
+</p>
+
+13. Elastic Ease In
+
+		float Easing::elasticEaseIn(float t, float b, float c, float d)
+		{
+			if (t == 0) return b;  if ((t /= d) == 1) return b + c;
+			float p = d * .3f;
+			float a = c;
+			float s = p / 4;
+			float postFix = a * pow(2, 10 * (t -= 1));
+			return -(postFix * sin((t * d - s) * (2 * PI) / p)) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInElastic.PNG">
+</p>
+
+14. Elastic Ease Out
+
+		float Easing::elasticEaseOut(float t, float b, float c, float d)
+		{
+			if (t == 0) return b;  if ((t /= d) == 1) return b + c;
+			float p = d * .3f;
+			float a = c;
+			float s = p / 4;
+			return (a * pow(2, -10 * t) * sin((t * d - s) * (2 * PI) / p) + c + b);
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutElastic.PNG">
+</p>
+
+15. Elastic Ease In/Out
+
+		float Easing::elasticEaseInOut(float t, float b, float c, float d)
+		{
+			if (t == 0) return b;  if ((t /= d / 2) == 2) return b + c;
+			float p = d * (.3f * 1.5f);
+			float a = c;
+			float s = p / 4;
+
+			if (t < 1)
+			{
+				float postFix = a * pow(2, 10 * (t -= 1));
+				return -.5f * (postFix * sin((t * d - s) * (2 * PI) / p)) + b;
+			}
+			float postFix = a * pow(2, -10 * (t -= 1));
+			return postFix * sin((t * d - s) * (2 * PI) / p) * .5f + c + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutElastic.PNG">
+</p>
+
+16. Exponential Ease In
+
+		float Easing::exponentialEaseIn(float t, float b, float c, float d)
+		{
+			return (t == 0) ? b : c * pow(2, 10 * (t / d - 1)) + b;
+		}	
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInExpo.PNG">
+</p>
+
+17. Exponential Ease Out
+
+		float Easing::exponentialEaseOut(float t, float b, float c, float d)
+		{
+			return (t == d) ? b + c : c * (-pow(2, -10 * t / d) + 1) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutExpo.PNG">
+</p>
+
+18. Exponential Ease In/Out
+
+		float Easing::exponentialEaseInOut(float t, float b, float c, float d)
+		{
+			if (t == 0) return b;
+			if (t == d) return b + c;
+			if ((t /= d / 2) < 1) return c / 2 * pow(2, 10 * (t - 1)) + b;
+			return c / 2 * (-pow(2, -10 * --t) + 2) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutExpo.PNG">
+</p>
+
+19. Linear Ease
+
+		float Easing::linearEaseNone(float t, float b, float c, float d)
+		{
+			return c * t / d + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/linearEase.PNG">
+</p>
+
+20. Quad Ease In
+
+		float Easing::quadEaseIn(float t, float b, float c, float d)
+		{
+			return c * (t /= d) * t + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easiInQuad.PNG">
+</p>
+
+21. Quad Ease Out
+
+		float Easing::quadEaseOut(float t, float b, float c, float d)
+		{
+			return -c * (t /= d) * (t - 2) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutQuad.PNG">
+</p>
+
+22. Quad Ease In/Out
+
+		float Easing::quadEaseInOut(float t, float b, float c, float d)
+		{
+			if ((t /= d / 2) < 1) return ((c / 2) * (t * t)) + b;
+			return -c / 2 * (((t - 2) * (--t)) - 1) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutQuad.PNG">
+</p>
+
+23. Quart Ease In
+
+		float Easing::quartEaseIn(float t, float b, float c, float d)
+		{
+			return c * (t /= d) * t * t * t + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInQuart.PNG">
+</p>
+
+24. Quart Ease Out
+
+		float Easing::quartEaseOut(float t, float b, float c, float d)
+		{
+			return -c * ((t = t / d - 1) * t * t * t - 1) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutQuart.PNG">
+</p>
+
+25. Quart Ease In/Out
+
+		float Easing::quartEaseInOut(float t, float b, float c, float d)
+		{
+			if ((t /= d / 2) < 1) return c / 2 * t * t * t * t + b;
+			return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutQuart.PNG">
+</p>
+
+26. Quint Ease In
+
+		float Easing::quintEaseIn(float t, float b, float c, float d)
+		{
+			return c * (t /= d) * t * t * t * t + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInQuint.PNG">
+</p>
+
+27. Quint Ease Out
+
+		float Easing::quintEaseOut(float t, float b, float c, float d)
+		{
+			return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutQuint.PNG">
+</p>
+
+28. Quint Ease In/Out
+
+		float Easing::quintEaseInOut(float t, float b, float c, float d) 
+		{
+			if ((t /= d / 2) < 1) return c / 2 * t * t * t * t * t + b;
+			return c / 2 * ((t -= 2) * t * t * t * t + 2) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutQuint.PNG">
+</p>
+
+29. Sine Ease In
+
+		float Easing::sineEaseIn(float t, float b, float c, float d)
+		{
+			return -c * cos(t / d * (PI / 2)) + c + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInSine.PNG">
+</p>
+
+30. Sine Ease Out
+
+		float Easing::sineEaseOut(float t, float b, float c, float d)
+		{
+			return c * sin(t / d * (PI / 2)) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutSine.PNG">
+</p>
+
+31. Sine Ease In/Out 
+
+		float Easing::sineEaseInOut(float t, float b, float c, float d)
+		{
+			return -c / 2 * (cos(PI * t / d) - 1) + b;
+		}
+
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutSine.PNG">
+</p>
 
 ## 3. Splines
 In *maths* area, a spline is a function defined piece by piece, by polynomials. In interpolating problems, spline interpolation is usually preferred over polynomial interpolation because it performs practically the same, even using low degree polynomials, while avoiding [Runge's phenomenon](https://en.wikipedia.org/wiki/Runge%27s_phenomenon) for higher degrees.
@@ -183,27 +583,39 @@ There are some different types of splines, let's see them.
 ### 3.1 Types Of Splines
 1. Bezier: Is just a spline defined "point by point", by different Bezier curves.
 
-![Bezier](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/bezier.PNG)
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/bezier.PNG">
+</p>
 
 2. Cubic: This one gives an interpolation polynomial that is smoother and has less error than some other interpolating polynomials. It's used to avoid the problem of Runge's phenomenon.
 
-![Cubic](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/cubic%20spline.PNG)
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/cubic%20spline.PNG">
+</p>
 
 3. B-Spline: Is a spline function that has minimal support with respect to a given degree, smoothness, and domain partition. All the spline functions of a given degree can be expressed as a linear combination of B-splines.
 
-![b-spline](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/b-spline.PNG)
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/b-spline.PNG">
+</p>
 
 4. Linear: Is a continuous function defined by linear polynomials. So, it's a continuous set of straight lines.
 
-![linear](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/linear%20spline.PNG)
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/linear%20spline.PNG">
+</p>
 
 5. NURBS (Non-uniform rational B-Spline): This one is just a mathematical model using B-Splines, usually used in computer graphics for representing curves and surfaces. It gives a great flexibility and precision for handling both analytic and model shapes.
 
-![nurbs](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/nurbs%20spline.PNG)
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/nurbs%20spline.PNG">
+</p>
 
 6. Catmull-Rom: A catmull-rom spline is a curve named like this because of his creators ([Edwin Catmull](https://en.wikipedia.org/wiki/Edwin_Catmull) and [Raphael Rom](https://es.wikipedia.org/w/index.php?title=Raphael_Rom&action=edit&redlink=1)). The main advantage of this techinque is that the original set of points are also part of the control points from the curve spline.
 
-![catmull](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/catmull-rom%20spline.PNG)
+<p align="center">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/catmull-rom%20spline.PNG">
+</p>
 
 ### 3.2 Uses Of Splines
 The splines are very used in a lot of areas, like I said [before](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#3-splines). But now, I'll take a look on a more specific area, Videogames:
@@ -211,16 +623,31 @@ The splines are very used in a lot of areas, like I said [before](https://github
 In videogames, splines have some uses, but the main is creating paths for the enemies to follow. If you want a smooth motion, the path of the enemies should be continuous (just what splines offers). Other common use of splines in videogames is to design and then define the necessary experience needed to increse levels. Splines are also used in 3D and VR videogames, taking a great importance on camera views, in order to give a smooth camera movement in games where the camera used is the first person (First Person Shooter usually). Moreover, splines are used to create most smoother animations in videogames (also in animation films).
 Here we have some graphic examples of what I have said on the previous lines:
 
-![doom](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/doom%20eternal.gif)
+<p align="left">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/doom%20eternal.gif">
+</p>
 
 Here, we can see how splines are used in "[Doom Eternal](https://en.wikipedia.org/wiki/Doom_Eternal)" to give a smooth camera movement to the players.
 
-![crash](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/crash.gif)
+<p align="left">
+   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/crash.gif">
+</p>
 
 On "[Crash Bandiccot: N.Sane Trilogy](https://en.wikipedia.org/wiki/Crash_Bandicoot_N._Sane_Trilogy)", splines are used to define the path the apples follow until they arrive to his destiny.
 
 
 ## 4. Improvements
 ## 5. References
+https://medium.com/motion-in-interaction/animation-principles-in-ui-design-understanding-easing-bea05243fe3
 
+https://easings.net/
 
+http://robertpenner.com/easing/
+
+https://github.com/raysan5/raylib/blob/master/src/easings.h
+
+https://github.com/marcgreig/Easing-and-Splines-Research
+
+http://www.animschoolblog.com/2017/07/stepped-or-spline.html
+
+http://euklid.mi.uni-koeln.de/c/mirror/www.cs.curtin.edu.au/units/cg351-551/notes/lect6c1.html
