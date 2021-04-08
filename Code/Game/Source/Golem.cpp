@@ -29,7 +29,8 @@ Golem::Golem(iPoint pos) : Enemy(EntityType::GOLEM)
 	initialPosition = 0;
 	deltaPosition = 700;
 	easingActivated = false;
-
+	easingType = 0;
+	easingMode = 1;
 }
 
 Golem::~Golem()
@@ -45,140 +46,178 @@ bool Golem::Load()
 
 bool Golem::Update(float dt)
 {
-	if (app->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
+	if (app->input->GetKey(SDL_SCANCODE_1) == KEY_DOWN)
 	{
-		currentIteration = 0;
-		position_x = 0;
-		easingActivated = true;
-		easingType = 0;
+		easingMode = 1; 
+		easeMode = "Easing Mode: In";
 	}
-	if (app->input->GetKey(SDL_SCANCODE_W) == KEY_DOWN)
+	if (app->input->GetKey(SDL_SCANCODE_2) == KEY_DOWN)
+	{
+		easingMode = 2;
+		easeMode = "Easing Mode: Out";
+	}
+	if (app->input->GetKey(SDL_SCANCODE_3) == KEY_DOWN)
+	{
+		easingMode = 3;
+		easeMode = "Easing Mode: In/Out";
+	}
+
+	if (app->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
 	{
 		currentIteration = 0;
 		position_x = 0;
 		easingActivated = true;
 		easingType = 1;
 	}
-	if (app->input->GetKey(SDL_SCANCODE_E) == KEY_DOWN)
+	if (app->input->GetKey(SDL_SCANCODE_W) == KEY_DOWN)
 	{
 		currentIteration = 0;
 		position_x = 0;
 		easingActivated = true;
 		easingType = 2;
 	}
-	if (app->input->GetKey(SDL_SCANCODE_R) == KEY_DOWN)
+	if (app->input->GetKey(SDL_SCANCODE_E) == KEY_DOWN)
 	{
 		currentIteration = 0;
 		position_x = 0;
 		easingActivated = true;
 		easingType = 3;
 	}
-	if (app->input->GetKey(SDL_SCANCODE_T) == KEY_DOWN)
+	if (app->input->GetKey(SDL_SCANCODE_R) == KEY_DOWN)
 	{
 		currentIteration = 0;
 		position_x = 0;
 		easingActivated = true;
 		easingType = 4;
 	}
-	if (app->input->GetKey(SDL_SCANCODE_Y) == KEY_DOWN)
+	if (app->input->GetKey(SDL_SCANCODE_T) == KEY_DOWN)
 	{
 		currentIteration = 0;
 		position_x = 0;
 		easingActivated = true;
 		easingType = 5;
 	}
-	if (app->input->GetKey(SDL_SCANCODE_U) == KEY_DOWN)
+	if (app->input->GetKey(SDL_SCANCODE_Y) == KEY_DOWN)
 	{
 		currentIteration = 0;
 		position_x = 0;
 		easingActivated = true;
 		easingType = 6;
 	}
-	if (app->input->GetKey(SDL_SCANCODE_I) == KEY_DOWN)
+	if (app->input->GetKey(SDL_SCANCODE_U) == KEY_DOWN)
 	{
 		currentIteration = 0;
 		position_x = 0;
 		easingActivated = true;
 		easingType = 7;
 	}
-	if (app->input->GetKey(SDL_SCANCODE_O) == KEY_DOWN)
+	if (app->input->GetKey(SDL_SCANCODE_I) == KEY_DOWN)
 	{
 		currentIteration = 0;
 		position_x = 0;
 		easingActivated = true;
 		easingType = 8;
 	}
-	if (app->input->GetKey(SDL_SCANCODE_P) == KEY_DOWN)
+	if (app->input->GetKey(SDL_SCANCODE_O) == KEY_DOWN)
 	{
 		currentIteration = 0;
 		position_x = 0;
 		easingActivated = true;
 		easingType = 9;
 	}
-	if (app->input->GetKey(SDL_SCANCODE_A) == KEY_DOWN)
+	if (app->input->GetKey(SDL_SCANCODE_P) == KEY_DOWN)
 	{
 		currentIteration = 0;
 		position_x = 0;
 		easingActivated = true;
 		easingType = 10;
 	}
+	if (app->input->GetKey(SDL_SCANCODE_A) == KEY_DOWN)
+	{
+		currentIteration = 0;
+		position_x = 0;
+		easingActivated = true;
+		easingType = 11;
+	}
 
 	if (easingActivated == true)
 	{
-		if (easingType == 0)
+		if (easingType == 1)
 		{
-			position_x = easing->backEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
-			tmp = "BACK";
-		}
-		else if (easingType == 1)
-		{
-			position_x = easing->bounceEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
-			tmp = "BOUNCE";
+			if (easingMode == 1) position_x = easing->backEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 2) position_x = easing->backEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 3) position_x = easing->backEaseInOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			easeType = "BACK";
 		}
 		else if (easingType == 2)
 		{
-			position_x = easing->circularEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
-			tmp = "CIRCULAR";
+			if (easingMode == 1) position_x = easing->bounceEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 2) position_x = easing->bounceEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 3) position_x = easing->bounceEaseInOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			easeType = "BOUNCE";
 		}
 		else if (easingType == 3)
 		{
-			position_x = easing->cubicEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
-			tmp = "CUBIC";
+			if (easingMode == 1) position_x = easing->circularEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 2) position_x = easing->circularEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 3) position_x = easing->circularEaseInOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			easeType = "CIRCULAR";
 		}
 		else if (easingType == 4)
 		{
-			position_x = easing->elasticEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
-			tmp = "ELASTIC";
+			if (easingMode == 1) position_x = easing->cubicEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 2) position_x = easing->cubicEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 3) position_x = easing->cubicEaseInOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			easeType = "CUBIC";
 		}
 		else if (easingType == 5)
 		{
-			position_x = easing->exponentialEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
-			tmp = "EXPONENTIAL";
+			if (easingMode == 1) position_x = easing->elasticEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 2) position_x = easing->elasticEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 3) position_x = easing->elasticEaseInOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			easeType = "ELASTIC";
 		}
 		else if (easingType == 6)
 		{
-			position_x = easing->linearEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
-			tmp = "LINEAR";
+			if (easingMode == 1) position_x = easing->exponentialEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 2) position_x = easing->exponentialEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 3) position_x = easing->exponentialEaseInOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			easeType = "EXPONENTIAL";
 		}
 		else if (easingType == 7)
 		{
-			position_x = easing->quadEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
-			tmp = "QUAD";
+			if (easingMode == 1) position_x = easing->linearEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 2) position_x = easing->linearEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 3) position_x = easing->linearEaseInOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			easeType = "LINEAR";
 		}
 		else if (easingType == 8)
 		{
-			position_x = easing->quartEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
-			tmp = "QUART";
+			if (easingMode == 1) position_x = easing->quadEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 2) position_x = easing->quadEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 3) position_x = easing->quadEaseInOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			easeType = "QUAD";
 		}
 		else if (easingType == 9)
 		{
-			position_x = easing->quintEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
-			tmp = "QUINT";
+			if (easingMode == 1) position_x = easing->quartEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 2) position_x = easing->quartEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 3) position_x = easing->quartEaseInOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			easeType = "QUART";
 		}
 		else if (easingType == 10)
 		{
-			position_x = easing->sineEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
-			tmp = "SINE";
+			if (easingMode == 1) position_x = easing->quintEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 2) position_x = easing->quintEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 3) position_x = easing->quintEaseInOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			easeType = "QUINT";
+		}
+		else if (easingType == 11)
+		{
+			if (easingMode == 1) position_x = easing->sineEaseIn(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 2) position_x = easing->sineEaseOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			if (easingMode == 3) position_x = easing->sineEaseInOut(currentIteration, initialPosition, deltaPosition, totalIterations);
+			easeType = "SINE";
 		}
 	}
 
@@ -210,7 +249,10 @@ void Golem::Draw(bool showColliders)
 	app->render->DrawTexture(texture, position_x, position_y, &rect);
 
 	SDL_Color color = { 0, 0, 255, 255 };
-	if (easingActivated) app->render->DrawText(font, tmp, 500, 350, 100, 3, color);
+	if (easingActivated) app->render->DrawText(font, easeType, 500, 350, 100, 3, color);
+
+	app->render->DrawText(font, easeMode, 500, 450, 100, 3, color);
+
 }
 
 bool Golem::UnLoad()

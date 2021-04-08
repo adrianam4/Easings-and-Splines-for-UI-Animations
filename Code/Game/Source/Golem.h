@@ -39,6 +39,8 @@ private:
 
 	bool easingActivated;
 	int easingType;
+	int easingMode;
 
-	const char* tmp = " ";
+	const char* easeType = " ";
+	const char* easeMode = "EASE IN";
 };
