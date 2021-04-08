@@ -38,7 +38,7 @@ All the easing functions depends on four parameters:
 - Change in distance (c) which is the difference of distance between the beggining position and the final one (f-b).
 - Duration (d) that represent the amount of total iterations you want for complete your animation.
 
-<p align="center">
+<p align="left">
    <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/bouncing_ball.gif">
 </p>
 
@@ -623,13 +623,13 @@ The splines are very used in a lot of areas, like I said [before](https://github
 In videogames, splines have some uses, but the main is creating paths for the enemies to follow. If you want a smooth motion, the path of the enemies should be continuous (just what splines offers). Other common use of splines in videogames is to design and then define the necessary experience needed to increse levels. Splines are also used in 3D and VR videogames, taking a great importance on camera views, in order to give a smooth camera movement in games where the camera used is the first person (First Person Shooter usually). Moreover, splines are used to create most smoother animations in videogames (also in animation films).
 Here we have some graphic examples of what I have said on the previous lines:
 
-<p align="center">
+<p align="left">
    <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/doom%20eternal.gif">
 </p>
 
 Here, we can see how splines are used in "[Doom Eternal](https://en.wikipedia.org/wiki/Doom_Eternal)" to give a smooth camera movement to the players.
 
-<p align="center">
+<p align="left">
    <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/crash.gif">
 </p>
 
