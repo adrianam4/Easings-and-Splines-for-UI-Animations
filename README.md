@@ -168,7 +168,7 @@ This code, should be enough to perform a backEaseIn. But if you want to implemen
 
 Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 
-   ![backEaseOut Example](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/ease%20out%20example.gif)
+   <img align="center" src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/ease%20out%20example.gif">
 
 ### 2.4 Easing Functions 
 
@@ -183,7 +183,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 	   	 return c * (postFix)*t * ((s + 1) * t - s) + b;
     		}
 
-   ![backIn](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInBack.PNG)
+   <img align="center" src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInBack.PNG">
 
 2. Back Ease Out
 
