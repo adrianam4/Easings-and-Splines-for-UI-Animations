@@ -638,4 +638,16 @@ On "[Crash Bandiccot: N.Sane Trilogy](https://en.wikipedia.org/wiki/Crash_Bandic
 
 ## 4. Improvements
 ## 5. References
+https://medium.com/motion-in-interaction/animation-principles-in-ui-design-understanding-easing-bea05243fe3
 
+https://easings.net/
+
+http://robertpenner.com/easing/
+
+https://github.com/raysan5/raylib/blob/master/src/easings.h
+
+https://github.com/marcgreig/Easing-and-Splines-Research
+
+http://www.animschoolblog.com/2017/07/stepped-or-spline.html
+
+http://euklid.mi.uni-koeln.de/c/mirror/www.cs.curtin.edu.au/units/cg351-551/notes/lect6c1.html
