@@ -190,9 +190,9 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 
     		float Easing::backEaseIn(float t, float b, float c, float d)
     		{
-	   	 float s = 1.70158f;
-	   	 float aux = t /= d;
-	   	 return c * (aux)*t * ((s + 1) * t - s) + b;
+	   	 	float s = 1.70158f;
+	   	 	float aux = t /= d;
+	   	 	return c * (aux)*t * ((s + 1) * t - s) + b;
     		}
 
    
