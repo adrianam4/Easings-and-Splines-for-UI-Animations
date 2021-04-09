@@ -72,7 +72,7 @@ That 3 types were the biggest types of easing, the most global ones. But, there 
   
   5.Quint or Strong: Describes a movement accelerated, where the speed is increased by a pow of 5.
    
-  6.Circular: Uses a pow of 6, and describes a circular movement.
+  6.Circular: Describes a movement accelerated, where the speed is increased by a pow of 6.
    
 - Complex Functions
 
