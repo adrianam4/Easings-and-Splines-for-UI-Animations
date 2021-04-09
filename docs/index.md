@@ -1,30 +1,30 @@
 # Easings and Splines for UI Animations
 ## Index
-1. [Introduction and goals](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/README.md#1-introduction-and-goals)
+1. [Introduction and goals]
 
-2. [Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#2-easings)
+2. [Easings]
 
-    2.1. [Types of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#21-types-of-easings)
+    2.1. [Types of Easings]
    
-    2.2. [Uses of Easings](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#22-uses-of-easings)
+    2.2. [Uses of Easings]
    
-    2.3. [How does it work](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#23-how-does-it-work)
+    2.3. [How does it work]
    
-    2.4. [Easing Functions](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#24-easing-functions)
+    2.4. [Easing Functions]
 
-3. [Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#3-splines)
+3. [Splines]
 
-    3.1. [Types of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/README.md#31-types-of-splines) 
+    3.1. [Types of Splines]
    
-    3.2. [Uses of Splines](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/README.md#32-uses-of-splines)
+    3.2. [Uses of Splines]
 
-4. [Improvements](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#4-improvements)
+4. [Improvements]
 
-5. [Pros and Cons](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#5-pros-and-cons) 
+5. [Pros and Cons]
 
-6. [Conclusion](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#6-conclusion)
+6. [Conclusion]
 
-7. [References](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#7-references)
+7. [References]
 
 ## 1. Introduction and goals
 I'm [Adrián Aroca](https://www.linkedin.com/in/adri%C3%A1n-aroca-mascaraque-4570001a2/), a student of the [Bachelor's Degree in Design and Develpment of Videogames at CITM (UPC)](https://www.citm.upc.edu/). This is my personal research for the subject "Project 2" which is given by [Ramon Santamaria](https://www.linkedin.com/in/raysan/), the main developer of [Raylib](https://www.raylib.com/).
