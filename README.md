@@ -656,20 +656,20 @@ The use of easings in videogames can make your work as developer easier in a lot
 
 - PROS
 
-     1. Easings makes you saving a lot of time and effort.
+     1.Easings makes you saving a lot of time and effort.
      
-     2. Easings are easy to understand, easy to implement in your code and easy to use them.
+     2.Easings are easy to understand, easy to implement in your code and easy to use them.
 
-     3. Easings let the developer create smooth movements or animations quickly and easily.  
+     3.Easings let the developer create smooth movements or animations quickly and easily.  
      
-     4. Easings also are useful to create camera movements smoother, to create paths, and to create dynamic UI that looks so cool. 
+     4.Easings also are useful to create camera movements smoother, to create paths, and to create dynamic UI that looks so cool. 
      
 
 - CONS
 
-     1. The maths you must know to create all the easing functions could be difficult for some people.
+     1.The maths you must know to create all the easing functions could be difficult for some people.
      
-     2. The library requires implementing 33 functions, and it's a lot of work.
+     2.The library requires implementing 33 functions, and it's a lot of work.
         
 ## 6. References
 https://medium.com/motion-in-interaction/animation-principles-in-ui-design-understanding-easing-bea05243fe3
