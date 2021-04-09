@@ -55,7 +55,7 @@ First of all, there are 3 easings types:
    3. Mixed: This one, mixes the both previous types (Usually describes a positive acceleration first, and then a negative one).
    
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/types%20of%20easings.png">
+   <img src="types%20of%20easings.png">
 </p>
 
 That 3 types were the biggest types of easing, the most global ones. But, there is a lot of specific functions you can use to describe movements based on easings. 
@@ -93,7 +93,7 @@ Like said previously, easings are used to create animations that describes accel
 All this is possible thanks to all the Programmers or Coders that implement all the math functions explained [here](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#21-types-of-easings).
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/easing%20usability.gif">
+   <img src="easing%20usability.gif">
 </p>
 
 ### 2.3 How Does It Work
@@ -179,7 +179,7 @@ This code, should be enough to perform a backEaseIn. But if you want to implemen
 Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/ease%20out%20example.gif">
+   <img src="ease%20out%20example.gif">
 </p>
 
 ### 2.4 Easing Functions 
@@ -197,7 +197,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 
    
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInBack.PNG">
+   <img src="Easings/easeInBack.PNG">
 </p>
 
 - Back Ease Out
@@ -209,7 +209,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutBack.PNG">
+   <img src="Easings/easeOutBack.PNG">
 </p>
 
 - Back Ease In/Out
@@ -223,7 +223,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutBack.PNG">
+   <img src="Easings/easeInOutBack.PNG">
 </p>
 
 - Bounce Ease In
@@ -234,7 +234,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInBounce.PNG">
+   <img src="Easings/easeInBounce.PNG">
 </p>
 
 - Bounce Ease Out
@@ -259,7 +259,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 		
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutBounce.PNG">
+   <img src="Easings/easeOutBounce.PNG">
 </p>
 
 - Bounce Ease In/Out
@@ -271,7 +271,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 		
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutBounce.PNG">
+   <img src="Easings/easeInOutBounce.PNG">
 </p>
 
 - Circular Ease In
@@ -282,7 +282,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 		
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInCirc.PNG">
+   <img src="Easings/easeInCirc.PNG">
 </p>
 
 - Circular Ease Out
@@ -293,7 +293,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 		
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutCirc.PNG">
+   <img src="Easings/easeOutCirc.PNG">
 </p>
 
 - Circular Ease In/Out
@@ -305,7 +305,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 		
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutCirc.PNG">
+   <img src="Easings/easeInOutCirc.PNG">
 </p>
 
 - Cubic Ease In
@@ -316,7 +316,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInCubic.PNG">
+   <img src="Easings/easeInCubic.PNG">
 </p>
 
 - Cubic Ease Out
@@ -327,7 +327,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutCubic.PNG">
+   <img src="Easings/easeOutCubic.PNG">
 </p>
 
 - Cubic Ease In/Out
@@ -339,7 +339,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutCubic.PNG">
+   <img src="Easings/easeInOutCubic.PNG">
 </p>
 
 - Elastic Ease In
@@ -355,7 +355,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInElastic.PNG">
+   <img src="Easings/easeInElastic.PNG">
 </p>
 
 - Elastic Ease Out
@@ -370,7 +370,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutElastic.PNG">
+   <img src="Easings/easeOutElastic.PNG">
 </p>
 
 - Elastic Ease In/Out
@@ -392,7 +392,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutElastic.PNG">
+   <img src="Easings/easeInOutElastic.PNG">
 </p>
 
 - Exponential Ease In
@@ -403,7 +403,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}	
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInExpo.PNG">
+   <img src="Easings/easeInExpo.PNG">
 </p>
 
 - Exponential Ease Out
@@ -414,7 +414,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutExpo.PNG">
+   <img src="Easings/easeOutExpo.PNG">
 </p>
 
 - Exponential Ease In/Out
@@ -428,7 +428,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutExpo.PNG">
+   <img src="Easings/easeInOutExpo.PNG">
 </p>
 
 - Linear Ease
@@ -439,7 +439,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/linearEase.PNG">
+   <img src="Easings/linearEase.PNG">
 </p>
 
 - Quad Ease In
@@ -450,7 +450,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easiInQuad.PNG">
+   <img src="Easings/easiInQuad.PNG">
 </p>
 
 - Quad Ease Out
@@ -461,7 +461,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutQuad.PNG">
+   <img src="Easings/easeOutQuad.PNG">
 </p>
 
 - Quad Ease In/Out
@@ -473,7 +473,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutQuad.PNG">
+   <img src="Easings/easeInOutQuad.PNG">
 </p>
 
 - Quart Ease In
@@ -484,7 +484,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInQuart.PNG">
+   <img src="Easings/easeInQuart.PNG">
 </p>
 
 - Quart Ease Out
@@ -495,7 +495,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutQuart.PNG">
+   <img src="Easings/easeOutQuart.PNG">
 </p>
 
 - Quart Ease In/Out
@@ -507,7 +507,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutQuart.PNG">
+   <img src="Easings/easeInOutQuart.PNG">
 </p>
 
 - Quint Ease In
@@ -518,7 +518,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInQuint.PNG">
+   <img src="Easings/easeInQuint.PNG">
 </p>
 
 - Quint Ease Out
@@ -529,7 +529,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutQuint.PNG">
+   <img src="Easings/easeOutQuint.PNG">
 </p>
 
 - Quint Ease In/Out
@@ -541,7 +541,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutQuint.PNG">
+   <img src="Easings/easeInOutQuint.PNG">
 </p>
 
 - Sine Ease In
@@ -552,7 +552,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInSine.PNG">
+   <img src="Easings/easeInSine.PNG">
 </p>
 
 - Sine Ease Out
@@ -563,7 +563,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeOutSine.PNG">
+   <img src="Easings/easeOutSine.PNG">
 </p>
 
 - Sine Ease In/Out 
@@ -574,7 +574,7 @@ Video Example of a Golem moving using a backEaseOut (The Hunter Odyssey):
 		}
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/Easings/easeInOutSine.PNG">
+   <img src="Easings/easeInOutSine.PNG">
 </p>
 
 ## 3. Splines
@@ -589,37 +589,37 @@ There are some different types of splines, let's see them.
 - Bezier: Is just a spline defined "point by point", by different Bezier curves.
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/bezier.PNG">
+   <img src="bezier.PNG">
 </p>
 
 - Cubic: This one gives an interpolation polynomial that is smoother and has less error than some other interpolating polynomials. It's used to avoid the problem of Runge's phenomenon.
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/cubic%20spline.PNG">
+   <img src="cubic%20spline.PNG">
 </p>
 
 - B-Spline: Is a spline function that has minimal support with respect to a given degree, smoothness, and domain partition. All the spline functions of a given degree can be expressed as a linear combination of B-splines.
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/b-spline.PNG">
+   <img src="b-spline.PNG">
 </p>
 
 - Linear: Is a continuous function defined by linear polynomials. So, it's a continuous set of straight lines.
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/linear%20spline.PNG">
+   <img src="linear%20spline.PNG">
 </p>
 
 - NURBS (Non-uniform rational B-Spline): This one is just a mathematical model using B-Splines, usually used in computer graphics for representing curves and surfaces. It gives a great flexibility and precision for handling both analytic and model shapes.
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/nurbs%20spline.PNG">
+   <img src="nurbs%20spline.PNG">
 </p>
 
 - Catmull-Rom: A catmull-rom spline is a curve named like this because of his creators ([Edwin Catmull](https://en.wikipedia.org/wiki/Edwin_Catmull) and [Raphael Rom](https://es.wikipedia.org/w/index.php?title=Raphael_Rom&action=edit&redlink=1)). The main advantage of this techinque is that the original set of points are also part of the control points from the curve spline.
 
 <p align="center">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/catmull-rom%20spline.PNG">
+   <img src="catmull-rom%20spline.PNG">
 </p>
 
 ### 3.2 Uses Of Splines
@@ -629,13 +629,13 @@ In videogames, splines have some uses, but the main is creating paths for the en
 Here we have some graphic examples of what I have said on the previous lines:
 
 <p align="left">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/doom%20eternal.gif">
+   <img src="doom%20eternal.gif">
 </p>
 
 Here, we can see how splines are used in "[Doom Eternal](https://en.wikipedia.org/wiki/Doom_Eternal)" to give a smooth camera movement to the players.
 
 <p align="left">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/crash.gif">
+   <img src="crash.gif">
 </p>
 
 On "[Crash Bandiccot: N.Sane Trilogy](https://en.wikipedia.org/wiki/Crash_Bandicoot_N._Sane_Trilogy)", splines are used to define the path the apples follow until they arrive to his destiny.
@@ -650,7 +650,7 @@ I feel that the main goal I wanted to achieve is done. I created a C++ Library t
 4. May be it would be possible to create just a few functions (instead the 33 that I've created), that recieving the easing type as parameter, this function reproduce the easing you want.
 
 <p align="center">
-	<img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/improvements.jpg">
+	<img src="improvements.jpg">
 </p>
 
 ## 5. Pros and Cons
@@ -676,7 +676,7 @@ The use of easings in videogames can make your work as developer easier in a lot
      
      
      <p align="center">
-	<img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/pros%20and%20cons.png">
+	<img src="pros%20and%20cons.png">
      </p>
         
 ## 6. Conclusion
