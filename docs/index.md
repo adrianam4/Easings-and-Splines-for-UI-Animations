@@ -43,7 +43,7 @@ All the easing functions depends on four parameters:
 - Duration (d) that represent the amount of total iterations you want for complete your animation.
 
 <p align="left">
-   <img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/bouncing_ball.gif">
+   <img src="bouncing_ball.gif">
 </p>
 
 ### 2.1 Types Of Easings
