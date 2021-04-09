@@ -677,7 +677,14 @@ The use of easings in videogames can make your work as developer easier in a lot
 	<img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/pros%20and%20cons.png">
      </p>
         
-## 6. References
+## 6. Conclusion
+In conclusion, I think that easings and splines are fabulous to any videogames developer. Like i said before a lot of times, they let you make paths, animations, smooth movements, etc... 
+
+Without using easings, this work would be slow, heavy and harder. But using them, you will be able to achieve great results (better than if you don't use them). Moreover, that results will be achieved so much sooner and easily. So, I highly recommend everyone using my C++ Easings Library (or others), and then you will understand why easings and splines like me so much.
+
+I'm glad of the results I've obtained after a lot of hours of work, and I must say that the area of splines is very interesting (more than what I expected), and I  hope that you find this research as useful as I have found.
+
+## 7. References
 https://medium.com/motion-in-interaction/animation-principles-in-ui-design-understanding-easing-bea05243fe3
 
 https://easings.net/
