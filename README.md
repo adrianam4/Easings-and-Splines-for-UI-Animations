@@ -20,7 +20,9 @@
 
 4. [Improvements](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#4-improvements)
 
-5. [References](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#5-references)
+5. [Pros and Cons](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#5-pros-and-cons) 
+
+6. [References](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#6-references)
 
 ## 1. Introduction and goals
 I'm [Adrián Aroca](https://www.linkedin.com/in/adri%C3%A1n-aroca-mascaraque-4570001a2/), a student of the [Bachelor's Degree in Design and Develpment of Videogames at CITM (UPC)](https://www.citm.upc.edu/). This is my personal research for the subject "Project 2" which is given by [Ramon Santamaria](https://www.linkedin.com/in/raysan/), the main developer of [Raylib](https://www.raylib.com/).
@@ -645,7 +647,31 @@ I feel that the main goal I wanted to achieve is done. I created a C++ Library t
 3. I created a enum class that stored the easing type (cubic,bounce,linear,etc...), but when I tried to use it, the game crashes, so I created that class, but it's useless and I had to create extra variables in order to store the easing type I wanted. 
 4. May be it would be possible to create just a few functions (instead the 33 that I've created), that recieving the easing type as parameter, this function reproduce the easing you want.
 
-## 5. References
+<p align="center">
+	<img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/improvements.jpg">
+</p>
+
+## 5. Pros and Cons
+The use of easings in videogames can make your work as developer easier in a lot of ways, and it's hard for me saying a lot of disadvantage about using easings on videogames development. But, I'll try to say something bad about them.
+
+- PROS
+
+     1.Easings makes you saving a lot of time and effort.
+     
+     2.Easings are easy to understand, easy to implement in your code and easy to use them.
+
+     3.Easings let the developer create smooth movements or animations quickly and easily.  
+     
+     4.Easings also are useful to create camera movements smoother, to create paths, and to create dynamic UI that looks so cool. 
+     
+
+- CONS
+
+     1.The maths you must know to create all the easing functions could be difficult for some people.
+     
+     2.The library requires implementing 33 functions, and it's a lot of work.
+        
+## 6. References
 https://medium.com/motion-in-interaction/animation-principles-in-ui-design-understanding-easing-bea05243fe3
 
 https://easings.net/
