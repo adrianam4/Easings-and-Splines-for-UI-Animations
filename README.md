@@ -22,7 +22,9 @@
 
 5. [Pros and Cons](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#5-pros-and-cons) 
 
-6. [References](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#6-references)
+6. [Conclusion](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#6-conclusion)
+
+7. [References](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#7-references)
 
 ## 1. Introduction and goals
 I'm [Adrián Aroca](https://www.linkedin.com/in/adri%C3%A1n-aroca-mascaraque-4570001a2/), a student of the [Bachelor's Degree in Design and Develpment of Videogames at CITM (UPC)](https://www.citm.upc.edu/). This is my personal research for the subject "Project 2" which is given by [Ramon Santamaria](https://www.linkedin.com/in/raysan/), the main developer of [Raylib](https://www.raylib.com/).
