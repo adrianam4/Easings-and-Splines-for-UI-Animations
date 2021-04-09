@@ -687,17 +687,17 @@ Without using easings, this work would be slow, heavy and harder. But using them
 I'm glad of the results I've obtained after a lot of hours of work, and I must say that the area of splines is very interesting (more than what I expected), and I  hope that you find this research as useful as I have found.
 
 ## 7. References
-https://medium.com/motion-in-interaction/animation-principles-in-ui-design-understanding-easing-bea05243fe3
+[https://medium.com/motion-in-interaction/animation-principles-in-ui-design-understanding-easing-bea05243fe3](https://medium.com/motion-in-interaction/animation-principles-in-ui-design-understanding-easing-bea05243fe3)
 
-https://easings.net/
+[https://easings.net/](https://easings.net/)
 
-http://robertpenner.com/easing/
+[http://robertpenner.com/easing/](http://robertpenner.com/easing/)
 
-https://github.com/raysan5/raylib/blob/master/src/easings.h
+[https://github.com/raysan5/raylib/blob/master/src/easings.h](https://github.com/raysan5/raylib/blob/master/src/easings.h)
 
-https://github.com/marcgreig/Easing-and-Splines-Research
+[https://github.com/marcgreig/Easing-and-Splines-Research](https://github.com/marcgreig/Easing-and-Splines-Research)
 
-http://www.animschoolblog.com/2017/07/stepped-or-spline.html
+[http://www.animschoolblog.com/2017/07/stepped-or-spline.html](http://www.animschoolblog.com/2017/07/stepped-or-spline.html)
 
-http://euklid.mi.uni-koeln.de/c/mirror/www.cs.curtin.edu.au/units/cg351-551/notes/lect6c1.html
+[http://euklid.mi.uni-koeln.de/c/mirror/www.cs.curtin.edu.au/units/cg351-551/notes/lect6c1.html](http://euklid.mi.uni-koeln.de/c/mirror/www.cs.curtin.edu.au/units/cg351-551/notes/lect6c1.html)
 
