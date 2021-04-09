@@ -1,0 +1,25 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(477,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
+  EntityManager.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\NpcWizard.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Tabern.h(4,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\NpcWizard.h(5): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Town.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Tabern.h(4): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Player.h(8,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Town.h(5): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Hunter.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Player.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Thief.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Hunter.h(5): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Warrior.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Thief.h(5): message : vea la declaración de 'SDL_Texture'
+  Golem.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Golem.cpp(220,48): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Golem.cpp(220,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  SceneBattle.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Player.h(8,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+  Generando código...
+  Game.vcxproj -> C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Handout\Build\Debug\Game.exe
+          1 archivo(s) copiado(s).

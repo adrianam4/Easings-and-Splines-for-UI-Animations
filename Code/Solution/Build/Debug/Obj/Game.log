@@ -1,0 +1,158 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(477,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
+  Bat.cpp
+  BattleMenu.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+  Dialogue.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Dialogue.cpp(29,32): warning C4018: '<': no coinciden signed/unsigned
+  DialogueManager.cpp
+  Easings.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(59,43): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(64,43): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(69,62): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(70,46): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(97,12): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(98,50): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(107,68): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(119,13): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(120,57): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(122,12): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(123,57): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(129,12): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(134,12): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(141,60): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(142,42): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(219,40): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(224,35): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Easings.cpp(229,40): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+  EntityManager.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\NpcWizard.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Tabern.h(4,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\NpcWizard.h(5): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Town.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Tabern.h(4): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Town.h(5): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Hunter.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Thief.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Hunter.h(5): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Warrior.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Thief.h(5): message : vea la declaración de 'SDL_Texture'
+  Font.cpp
+  Golem.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Golem.cpp(249,48): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Golem.cpp(249,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  GuiButton.cpp
+  GuiCheckBox.cpp
+  GuiManager.cpp
+  GuiSlider.cpp
+  Hunter.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Hunter.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Hunter.cpp(54,28): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Hunter.cpp(58,28): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Hunter.cpp(62,28): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Hunter.cpp(66,28): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+  Main.cpp
+  App.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\App.cpp(196,37): warning C4018: '<': no coinciden signed/unsigned
+  Audio.cpp
+  Input.cpp
+  MainMenu.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\MainMenu.cpp(194,30): warning C4390: ';': se encontró una instrucción controlada vacía; ¿es esa la intención?
+  Map.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Map.cpp(189,33): warning C4838: la conversión de 'uint32' en 'int' requiere una conversión de restricción
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Map.cpp(189,62): warning C4838: la conversión de 'uint32' en 'int' requiere una conversión de restricción
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Map.cpp(190,22): warning C4838: la conversión de 'uint32' en 'int' requiere una conversión de restricción
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Map.cpp(190,47): warning C4838: la conversión de 'uint32' en 'int' requiere una conversión de restricción
+  Npc.cpp
+  Generando código...
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\GuiManager.cpp(80): warning C4715: 'GuiManager::Draw': no todas las rutas de acceso de control devuelven un valor
+  Compilando...
+  NpcWizard.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\NpcWizard.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+  PauseMenu.cpp
+  Player.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.cpp(68,27): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.cpp(72,27): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.cpp(76,27): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.cpp(80,27): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+  Render.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Render.cpp(245,40): warning C4838: la conversión de 'float' en 'int' requiere una conversión de restricción
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Render.cpp(245,40): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Render.cpp(249,48): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+  SceneBattle.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+  SceneEnding.cpp
+  SceneGameplay.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Warrior.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Thief.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Warrior.h(5): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Hunter.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Thief.h(5): message : vea la declaración de 'SDL_Texture'
+  SceneLogo.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\SceneLogo.cpp(88,79): warning C4244: 'argumento': conversión de 'float' a 'Uint8'; posible pérdida de datos
+  SceneManager.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\SceneManager.cpp(65,88): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\SceneManager.cpp(67,90): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\SceneManager.cpp(69,90): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\SceneManager.cpp(71,91): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+  SceneTitle.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\SceneTitle.cpp(103,61): warning C4244: 'argumento': conversión de 'float' a 'Uint8'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\SceneTitle.cpp(108,61): warning C4244: 'argumento': conversión de 'float' a 'Uint8'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\SceneTitle.cpp(112,61): warning C4244: 'argumento': conversión de 'float' a 'Uint8'; posible pérdida de datos
+  CharacterManager.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+  Skull.cpp
+  Tabern.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Tabern.h(4,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+  Textures.cpp
+  Thief.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Thief.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Thief.cpp(53,28): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Thief.cpp(57,28): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Thief.cpp(61,28): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Thief.cpp(65,28): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+  Town.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Town.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+  Warrior.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Warrior.h(5,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Warrior.cpp(53,28): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Warrior.cpp(57,28): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Warrior.cpp(61,28): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Warrior.cpp(65,28): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+  Window.cpp
+  Wizard.cpp
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Player.h(8,18): warning C4099: 'SDL_Texture': nombre de tipo visto anteriormente usando 'struct' ahora se ve usando 'class'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Entity.h(8): message : vea la declaración de 'SDL_Texture'
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Wizard.cpp(52,28): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Wizard.cpp(56,28): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Wizard.cpp(60,28): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Game\Source\Wizard.cpp(64,28): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+  Log.cpp
+  Generando código...
+  Compilando...
+  pugixml.cpp
+  Generando código...
+  Game.vcxproj -> C:\Users\adria\OneDrive\Escritorio\Easings-and-Splines-for-UI-Animations\Code\Solution\Build\Debug\Game.exe
+          1 archivo(s) copiado(s).

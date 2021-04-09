@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<save_status>
+  <window />
+  <input />
+  <textures />
+  <audio />
+  <scenemanager>
+    <scenegameplay>
+      <entities>
+        <NPCs amount="3">
+          <NPC>
+            <bounds X="4" Y="4" W="32" H="32" />
+            <NpcType type="TABERN" />
+          </NPC>
+          <NPC>
+            <bounds X="12" Y="45" W="32" H="32" />
+            <NpcType type="TOWN" />
+          </NPC>
+          <NPC>
+            <bounds X="24" Y="56" W="32" H="32" />
+            <NpcType type="NPC_WIZARD" />
+          </NPC>
+        </NPCs>
+        <players amount="4">
+          <player>
+            <bounds X="0" Y="-132" W="16" H="32" />
+            <playerType type="HUNTER" />
+          </player>
+          <player>
+            <bounds X="18" Y="2" W="16" H="32" />
+            <playerType type="WIZARD" />
+          </player>
+          <player>
+            <bounds X="12" Y="-32" W="16" H="32" />
+            <playerType type="THIEF" />
+          </player>
+          <player>
+            <bounds X="13" Y="-24" W="16" H="32" />
+            <playerType type="WARRIOR" />
+          </player>
+        </players>
+      </entities>
+    </scenegameplay>
+  </scenemanager>
+  <renderer />
+</save_status>
