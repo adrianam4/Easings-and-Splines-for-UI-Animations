@@ -670,6 +670,10 @@ The use of easings in videogames can make your work as developer easier in a lot
      1.The maths you must know to create all the easing functions could be difficult for some people.
      
      2.The library requires implementing 33 functions, and it's a lot of work.
+     
+     <p align="center">
+	<img src="https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations/blob/main/docs/pros%20and%20cons.png">
+     </p>
         
 ## 6. References
 https://medium.com/motion-in-interaction/animation-principles-in-ui-design-understanding-easing-bea05243fe3
