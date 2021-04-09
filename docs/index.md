@@ -623,7 +623,7 @@ There are some different types of splines, let's see them.
 </p>
 
 ### 3.2 Uses Of Splines
-The splines are very used in a lot of areas, like I said [before](https://github.com/adrianam4/Easings-and-Splines-for-UI-Animations#3-splines). But now, I'll take a look on a more specific area, Videogames:
+The splines are very used in a lot of areas, like I said before. But now, I'll take a look on a more specific area, Videogames:
 
 In videogames, splines have some uses, but the main is creating paths for the enemies to follow. If you want a smooth motion, the path of the enemies should be continuous (just what splines offers). Other common use of splines in videogames is to design and then define the necessary experience needed to increse levels. Splines are also used in 3D and VR videogames, taking a great importance on camera views, in order to give a smooth camera movement in games where the camera used is the first person (First Person Shooter usually). Moreover, splines are used to create most smoother animations in videogames (also in animation films).
 Here we have some graphic examples of what I have said on the previous lines:
